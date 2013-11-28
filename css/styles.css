@@ -623,17 +623,24 @@ label {
  *
  * @author magnify
  */
+/* Add padding bottom to body because of the fixed debug container */
 /* line 11, ../sass/misc/_debug.scss */
+body {
+  padding-bottom: 14em;
+}
+
+/* line 16, ../sass/misc/_debug.scss */
 .debug {
   padding-top: 2em;
   padding-bottom: 2em;
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 99;
   background-color: yellowgreen;
 }
 
-/* line 21, ../sass/misc/_debug.scss */
+/* line 27, ../sass/misc/_debug.scss */
 .debug--header {
   padding-right: 1em;
   padding-left: 1em;
@@ -641,7 +648,7 @@ label {
 
 /* Breakpoints
    ================================================================================================================== */
-/* line 31, ../sass/misc/_debug.scss */
+/* line 37, ../sass/misc/_debug.scss */
 .breakpoint-1, .breakpoint-2, .breakpoint-3 {
   display: none;
   margin-top: 1em;
@@ -652,7 +659,7 @@ label {
 }
 
 @media only screen and (min-width: 18.75em) {
-  /* line 42, ../sass/misc/_debug.scss */
+  /* line 48, ../sass/misc/_debug.scss */
   .breakpoint-1 {
     display: block;
     width: 18.75em;
@@ -660,7 +667,7 @@ label {
 }
 
 @media only screen and (min-width: 22.5em) {
-  /* line 51, ../sass/misc/_debug.scss */
+  /* line 57, ../sass/misc/_debug.scss */
   .breakpoint-2 {
     display: block;
     width: 22.5em;
@@ -668,7 +675,7 @@ label {
 }
 
 @media only screen and (min-width: 28em) {
-  /* line 60, ../sass/misc/_debug.scss */
+  /* line 66, ../sass/misc/_debug.scss */
   .breakpoint-3 {
     display: block;
     width: 28em;

@@ -7,6 +7,11 @@
  */
 
 
+/* Add padding bottom to body because of the fixed debug container */
+body {
+  padding-bottom: 14em;
+}
+
 
 .debug {
   padding-top: 2em;
@@ -14,6 +19,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 99;
 
   background-color: yellowgreen;
 }
