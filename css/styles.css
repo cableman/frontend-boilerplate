@@ -474,7 +474,7 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea {
-  border: 1px solid #999999;
+  border: 1px solid #cccccc;
   display: block;
   min-height: 1.25em;
   width: 100%;
