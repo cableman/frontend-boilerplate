@@ -527,11 +527,10 @@ textarea[disabled] {
 /* Labels
    ================================================================================================================== */
 /* line 59, ../sass/base/_forms.scss */
-.form-label {
+label {
   display: block;
   margin-bottom: .25em;
   /* Move labels so they align better with fields when using rounded corners */
-  /* Remove this if you fields don't have rounded corners */
   margin-left: .3em;
   color: #666666;
 }
