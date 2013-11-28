@@ -627,12 +627,21 @@ label {
 .debug {
   padding-top: 2em;
   padding-bottom: 2em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: yellowgreen;
+}
+
+/* line 21, ../sass/misc/_debug.scss */
+.debug--header {
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 /* Breakpoints
    ================================================================================================================== */
-/* line 23, ../sass/misc/_debug.scss */
+/* line 31, ../sass/misc/_debug.scss */
 .breakpoint-1, .breakpoint-2, .breakpoint-3 {
   display: none;
   margin-top: 1em;
@@ -643,7 +652,7 @@ label {
 }
 
 @media only screen and (min-width: 18.75em) {
-  /* line 34, ../sass/misc/_debug.scss */
+  /* line 42, ../sass/misc/_debug.scss */
   .breakpoint-1 {
     display: block;
     width: 18.75em;
@@ -651,7 +660,7 @@ label {
 }
 
 @media only screen and (min-width: 22.5em) {
-  /* line 43, ../sass/misc/_debug.scss */
+  /* line 51, ../sass/misc/_debug.scss */
   .breakpoint-2 {
     display: block;
     width: 22.5em;
@@ -659,7 +668,7 @@ label {
 }
 
 @media only screen and (min-width: 28em) {
-  /* line 52, ../sass/misc/_debug.scss */
+  /* line 60, ../sass/misc/_debug.scss */
   .breakpoint-3 {
     display: block;
     width: 28em;
