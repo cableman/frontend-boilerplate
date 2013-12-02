@@ -456,13 +456,13 @@ img {
  */
 /* Basic styling
    ================================================================================================================== */
-/* line 13, ../sass/base/_forms.scss */
+/* line 13, ../sass/examples/_forms.scss */
 input,
 textarea {
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 27, ../sass/base/_forms.scss */
+/* line 27, ../sass/examples/_forms.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -490,7 +490,7 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 37, ../sass/base/_forms.scss */
+/* line 37, ../sass/examples/_forms.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -505,7 +505,7 @@ textarea:focus {
   border: 1px solid gray;
   color: #4d4d4d;
 }
-/* line 43, ../sass/base/_forms.scss */
+/* line 43, ../sass/examples/_forms.scss */
 input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="date"][disabled],
@@ -526,7 +526,7 @@ textarea[disabled] {
 
 /* Labels
    ================================================================================================================== */
-/* line 59, ../sass/base/_forms.scss */
+/* line 59, ../sass/examples/_forms.scss */
 label {
   display: block;
   margin-bottom: .25em;
@@ -540,7 +540,7 @@ label {
  *
  * @author magnify
  */
-/* line 8, ../sass/base/_buttons.scss */
+/* line 8, ../sass/examples/_buttons.scss */
 .button {
   display: inline-block;
   font-size: 125%;
@@ -556,18 +556,18 @@ label {
   border-radius: 0.6em;
   text-shadow: 0.025em 0.025em 0.1em #737373;
 }
-/* line 20, ../sass/base/_buttons.scss */
+/* line 20, ../sass/examples/_buttons.scss */
 .button:focus, .button:hover, .button:active {
   text-decoration: none;
 }
 
-/* line 28, ../sass/base/_buttons.scss */
+/* line 28, ../sass/examples/_buttons.scss */
 .button {
   background-color: #666666;
   border: 0;
   color: white;
 }
-/* line 35, ../sass/base/_buttons.scss */
+/* line 35, ../sass/examples/_buttons.scss */
 .button:hover {
   background-color: #4d4d4d;
 }
