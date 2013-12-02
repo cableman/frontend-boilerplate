@@ -444,25 +444,6 @@ img {
 }
 
 /**
- * Breakpoints
- *
- * Should contain breakpoint variables and breakpoints related mixins
- *
- * @author magnify
- */
-/* Breakpoints
-   *
-   * These are only examples, change/add/remove so they match your needs
-   *
-   ================================================================================================================== */
-/* Mixins
-   *
-   * Use this mixin to change styling for your rulesets depending on a breakpoint (width)
-   *
-   * Usage example: @include breakpoint($breakpoint-x)
-   *
-   ================================================================================================================== */
-/**
  * Forms
  *
  * This is an example file
@@ -471,13 +452,13 @@ img {
  */
 /* Basic styling
    ================================================================================================================== */
-/* line 15, ../sass/examples/_forms.scss */
+/* line 15, ../sass/base/_forms.scss */
 input,
 textarea {
   font: 1em/1.5 Arial, sans-serif;
 }
 
-/* line 29, ../sass/examples/_forms.scss */
+/* line 29, ../sass/base/_forms.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -505,7 +486,7 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 39, ../sass/examples/_forms.scss */
+/* line 39, ../sass/base/_forms.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -520,7 +501,7 @@ textarea:focus {
   border: 1px solid gray;
   color: #4d4d4d;
 }
-/* line 45, ../sass/examples/_forms.scss */
+/* line 45, ../sass/base/_forms.scss */
 input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="date"][disabled],
@@ -541,7 +522,7 @@ textarea[disabled] {
 
 /* Labels
    ================================================================================================================== */
-/* line 61, ../sass/examples/_forms.scss */
+/* line 61, ../sass/base/_forms.scss */
 label {
   display: block;
   margin-bottom: .25em;
@@ -550,6 +531,25 @@ label {
   color: #666666;
 }
 
+/**
+ * Breakpoints
+ *
+ * Should contain breakpoint variables and breakpoints related mixins
+ *
+ * @author magnify
+ */
+/* Breakpoints
+   *
+   * These are only examples, change/add/remove so they match your needs
+   *
+   ================================================================================================================== */
+/* Mixins
+   *
+   * Use this mixin to change styling for your rulesets depending on a breakpoint (width)
+   *
+   * Usage example: @include breakpoint($breakpoint-x)
+   *
+   ================================================================================================================== */
 /**
  * Buttons
  *
