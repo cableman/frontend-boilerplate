@@ -21,15 +21,15 @@
 /* Spacing
    ================================================================================================================== */
 /**
- * Variables
+ * Theme variables
  *
  * This is an example file
  *
  * @author magnify
  */
-/* Colors
-   ================================================================================================================== */
 /* Typograhy
+   ================================================================================================================== */
+/* Link colors
    ================================================================================================================== */
 /**
  * Normalize
@@ -388,7 +388,7 @@ table {
 body {
   background-color: #fff;
   color: #333;
-  font: 1em/1.5 "ff-scala-sans-web-pro", Arial, sans-serif;
+  font: 1em/1.5 Arial, sans-serif;
 }
 
 /* line 22, ../sass/base/_base.scss */
@@ -400,7 +400,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: .5em;
-  font-family: 1em/1.5 "ff-scala-sans-web-pro", Arial, sans-serif;
+  font-family: 1em/1.5 Arial, sans-serif;
   font-weight: normal;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
@@ -426,21 +426,21 @@ em strong {
    ================================================================================================================== */
 /* line 56, ../sass/base/_base.scss */
 a:link {
-  color: blue;
+  color: lightblue;
   text-decoration: underline;
 }
 /* line 61, ../sass/base/_base.scss */
 a:visited {
-  color: #0000e6;
+  color: #99cfe0;
 }
 /* line 65, ../sass/base/_base.scss */
 a:hover {
-  color: #0000cc;
+  color: #86c5da;
   text-decoration: none;
 }
 /* line 70, ../sass/base/_base.scss */
 a:focus {
-  color: #0000cc;
+  color: #86c5da;
 }
 
 /* Paragraph
@@ -472,7 +472,7 @@ img {
 /* line 15, ../sass/examples/_forms.scss */
 input,
 textarea {
-  font: 1em/1.5 "ff-scala-sans-web-pro", Arial, sans-serif;
+  font: 1em/1.5 Arial, sans-serif;
 }
 
 /* line 29, ../sass/examples/_forms.scss */
