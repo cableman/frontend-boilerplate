@@ -31,12 +31,12 @@ $zen-gutter-width: 30px;
 
 // Include base
 @import "base/_normalize";
-@import "base/_breakpoints";
 @import "base/_base";
 
 
 
 // Examples
+@import "examples/_breakpoints";
 @import "examples/_forms";
 @import "examples/_buttons";
 @import "examples/_layout";

@@ -27,6 +27,8 @@
  *
  * @author magnify
  */
+/* Colors
+   ================================================================================================================== */
 /* Typograhy
    ================================================================================================================== */
 /* Link colors
@@ -359,25 +361,6 @@ table {
 }
 
 /**
- * Breakpoints
- *
- * Should contain breakpoint variables and breakpoints related mixins
- *
- * @author magnify
- */
-/* Breakpoints
-   *
-   * These are only examples, change/add/remove so they match your needs
-   *
-   ================================================================================================================== */
-/* Mixins
-   *
-   * Use this mixin to change styling for your rulesets depending on a breakpoint (width)
-   *
-   * Usage example: @include breakpoint($breakpoint-x)
-   *
-   ================================================================================================================== */
-/**
  * Base
  *
  * Contains styling and reset of basic elements
@@ -386,8 +369,8 @@ table {
  */
 /* line 10, ../sass/base/_base.scss */
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: white;
+  color: #4d4d4d;
   font: 1em/1.5 Arial, sans-serif;
 }
 
@@ -460,6 +443,25 @@ img {
   vertical-align: bottom;
 }
 
+/**
+ * Breakpoints
+ *
+ * Should contain breakpoint variables and breakpoints related mixins
+ *
+ * @author magnify
+ */
+/* Breakpoints
+   *
+   * These are only examples, change/add/remove so they match your needs
+   *
+   ================================================================================================================== */
+/* Mixins
+   *
+   * Use this mixin to change styling for your rulesets depending on a breakpoint (width)
+   *
+   * Usage example: @include breakpoint($breakpoint-x)
+   *
+   ================================================================================================================== */
 /**
  * Forms
  *
