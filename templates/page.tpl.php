@@ -102,7 +102,9 @@
       <?php endif; ?>
 
       <?php if ($breadcrumb): ?>
-        <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+        <div id="breadcrumb">
+          <?php print $breadcrumb; ?>
+        </div>
       <?php endif; ?>
 
       <div class="layout-wrapper">
@@ -149,10 +151,7 @@
 
   <footer>
     <div class="footer-inner">
-      <?php print render($page['footer_firstcolumn']); ?>
-      <?php print render($page['footer_secondcolumn']); ?>
-      <?php print render($page['footer_thirdcolumn']); ?>
-      <?php print render($page['footer_fourthcolumn']); ?>
+      <?php print render($page['footer']); ?>
     </div>
   </footer>
 </div>

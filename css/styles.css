@@ -557,7 +557,7 @@ label {
  *
  * @author magnify
  */
-/* line 10, ../sass/examples/_buttons.scss */
+/* line 10, ../sass/theme/_buttons.scss */
 .button {
   display: inline-block;
   font-size: 125%;
@@ -573,18 +573,18 @@ label {
   border-radius: 0.6em;
   text-shadow: 0.025em 0.025em 0.1em #737373;
 }
-/* line 22, ../sass/examples/_buttons.scss */
+/* line 22, ../sass/theme/_buttons.scss */
 .button:focus, .button:hover, .button:active {
   text-decoration: none;
 }
 
-/* line 30, ../sass/examples/_buttons.scss */
+/* line 30, ../sass/theme/_buttons.scss */
 .button {
   background-color: #666666;
   border: 0;
   color: white;
 }
-/* line 37, ../sass/examples/_buttons.scss */
+/* line 37, ../sass/theme/_buttons.scss */
 .button:hover {
   background-color: #4d4d4d;
 }
@@ -596,7 +596,7 @@ label {
  *
  * @author magnify
  */
-/* line 10, ../sass/examples/_layout.scss */
+/* line 10, ../sass/theme/_layout.scss */
 .example-header--inner, .example-layout {
   margin-right: auto;
   margin-left: auto;
@@ -604,13 +604,13 @@ label {
 }
 
 /* Example logo */
-/* line 19, ../sass/examples/_layout.scss */
+/* line 19, ../sass/theme/_layout.scss */
 .example-logo {
   font-size: 200%;
 }
 
 /* Example header */
-/* line 25, ../sass/examples/_layout.scss */
+/* line 25, ../sass/theme/_layout.scss */
 .example-header {
   margin-bottom: 1.5em;
   padding-top: 2em;
@@ -620,7 +620,7 @@ label {
 
 /* Example layout */
 /* Example section */
-/* line 47, ../sass/examples/_layout.scss */
+/* line 47, ../sass/theme/_layout.scss */
 .example-section {
   margin-bottom: 1.5em;
   padding: 2em;
@@ -628,7 +628,7 @@ label {
 }
 
 /* Example form */
-/* line 58, ../sass/examples/_layout.scss */
+/* line 58, ../sass/theme/_layout.scss */
 .example-form .example-form--input {
   margin-bottom: 1.5em;
 }
