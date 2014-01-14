@@ -4,8 +4,14 @@ core = 7.x
 
 ; Regions
 regions[header] = Header
-regions[content] = Content
-regions[footer] = Footer
+regions[featured] = Featured
+regions[content] = Primary content
+regions[secondary_content] = Secondary content
+regions[tertiary_content]  = Tertiary content
+regions[footer_firstcolumn] = Footer first
+regions[footer_secondcolumn] = Footer second
+regions[footer_thirdcolumn] = Footer third
+regions[footer_fourthcolumn] = Footer fourth
 
 ; Stylesheets
 stylesheets[all][] = css/styles.css
