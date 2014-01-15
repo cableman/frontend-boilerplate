@@ -149,7 +149,7 @@
     </div> <!-- inner -->
   </div> <!-- content -->
 
-  <footer class="footer">
+  <footer>
     <div class="footer--outer">
       <div class="footer--inner">
         <?php print render($page['footer']); ?>
