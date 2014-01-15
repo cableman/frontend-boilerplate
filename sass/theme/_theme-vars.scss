@@ -6,10 +6,20 @@
  * @author magnify
  */
 
+/* Layout
+   ================================================================================================================== */
 
+$layout-max-width:    75em;
+$border-radius:       .4em;
 
 /* Colors
    ================================================================================================================== */
+
+$background:  #ECECE9;
+$grey:        #555555;
+$shadow:      #AAAAAA;
+$white:       #FFFFFF;
+$blue:        #188DDC;
 
 $gray-lightest:    lighten($black, 90%);
 $gray-lighter:     lighten($black, 80%);
@@ -19,16 +29,15 @@ $gray-dark:        lighten($black, 50%);
 $gray-darker:      lighten($black, 40%);
 $gray-darkest:     lighten($black, 30%);
 
-
-
 /* Typograhy
    ================================================================================================================== */
 
-$font:             1em/1.5 Arial, sans-serif;
-
+$font:             13px/18px "Helvetica Neue", Arial, sans-serif;
+$text-color:       #222222;
+$text-color-head:  #333333;
 
 
 /* Link colors
    ================================================================================================================== */
 
-$link-color:       lightblue;
+$link-color:       #1469A2;

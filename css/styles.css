@@ -27,6 +27,8 @@
  *
  * @author magnify
  */
+/* Layout
+   ================================================================================================================== */
 /* Colors
    ================================================================================================================== */
 /* Typograhy
@@ -369,9 +371,9 @@ table {
  */
 /* line 10, ../sass/base/_base.scss */
 body {
-  background-color: white;
-  color: #4d4d4d;
-  font: 1em/1.5 Arial, sans-serif;
+  background: #ecece9 url("../images/back-body.jpg") left top repeat;
+  color: #222222;
+  font: 13px/18px "Helvetica Neue", Arial, sans-serif;
 }
 
 /* line 22, ../sass/base/_base.scss */
@@ -381,9 +383,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: .5em;
-  font-family: 1em/1.5 Arial, sans-serif;
+  font: 13px/18px "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
@@ -391,51 +391,73 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
+/* line 33, ../sass/base/_base.scss */
+h1, h2, h3 {
+  color: #333333;
+}
+
 /* line 37, ../sass/base/_base.scss */
+h1 {
+  margin-bottom: 0.6em;
+}
+
+/* line 41, ../sass/base/_base.scss */
+h2 {
+  font-size: 22px;
+  margin-bottom: 0.3em;
+}
+
+/* line 46, ../sass/base/_base.scss */
+h3 {
+  font-size: 18px;
+  margin-bottom: 0.5em;
+}
+
+/* line 51, ../sass/base/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 42, ../sass/base/_base.scss */
+/* line 56, ../sass/base/_base.scss */
 em {
   font-style: italic;
 }
-/* line 45, ../sass/base/_base.scss */
+/* line 59, ../sass/base/_base.scss */
 em strong {
   font-weight: bold;
 }
 
 /* Links
    ================================================================================================================== */
-/* line 56, ../sass/base/_base.scss */
+/* line 70, ../sass/base/_base.scss */
 a:link {
-  color: lightblue;
+  color: #1469a2;
   text-decoration: underline;
 }
-/* line 61, ../sass/base/_base.scss */
+/* line 75, ../sass/base/_base.scss */
 a:visited {
-  color: #99cfe0;
+  color: #115a8b;
 }
-/* line 65, ../sass/base/_base.scss */
+/* line 79, ../sass/base/_base.scss */
 a:hover {
-  color: #86c5da;
+  color: #0e4c75;
   text-decoration: none;
 }
-/* line 70, ../sass/base/_base.scss */
+/* line 84, ../sass/base/_base.scss */
 a:focus {
-  color: #86c5da;
+  color: #0e4c75;
 }
 
 /* Paragraph
    ================================================================================================================== */
-/* line 79, ../sass/base/_base.scss */
+/* line 93, ../sass/base/_base.scss */
 p {
   margin-top: 0;
 }
 
 /* Image
    ================================================================================================================== */
-/* line 87, ../sass/base/_base.scss */
+/* line 101, ../sass/base/_base.scss */
 img {
   display: inline;
   height: auto;
@@ -455,7 +477,7 @@ img {
 /* line 15, ../sass/base/_forms.scss */
 input,
 textarea {
-  font: 1em/1.5 Arial, sans-serif;
+  font: 13px/18px "Helvetica Neue", Arial, sans-serif;
 }
 
 /* line 29, ../sass/base/_forms.scss */
@@ -477,11 +499,11 @@ textarea {
   padding: .75em;
   color: #666666;
   background-color: white;
-  -webkit-border-radius: 0.6em;
-  -moz-border-radius: 0.6em;
-  -ms-border-radius: 0.6em;
-  -o-border-radius: 0.6em;
-  border-radius: 0.6em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+  border-radius: 0.4em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -566,11 +588,11 @@ label {
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
-  -webkit-border-radius: 0.6em;
-  -moz-border-radius: 0.6em;
-  -ms-border-radius: 0.6em;
-  -o-border-radius: 0.6em;
-  border-radius: 0.6em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+  border-radius: 0.4em;
   text-shadow: 0.025em 0.025em 0.1em #737373;
 }
 /* line 22, ../sass/theme/_buttons.scss */
@@ -591,110 +613,118 @@ label {
 
 /**
  * Layouts
- *
- * This is an example file
- *
- * @author magnify
  */
-/* line 10, ../sass/theme/_layout.scss */
-.example-header--inner, .example-layout {
+/* line 5, ../sass/theme/_layout.scss */
+.content-inner, .footer--outer {
   margin-right: auto;
   margin-left: auto;
-  max-width: 75em;
+  max-width: 960px;
 }
 
-/* Example logo */
-/* line 19, ../sass/theme/_layout.scss */
-.example-logo {
-  font-size: 200%;
-}
-
-/* Example header */
-/* line 25, ../sass/theme/_layout.scss */
-.example-header {
+/* Header */
+/* line 13, ../sass/theme/_layout.scss */
+.header {
   margin-bottom: 1.5em;
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #cccccc;
 }
 
-/* Example layout */
-/* Example section */
-/* line 47, ../sass/theme/_layout.scss */
-.example-section {
-  margin-bottom: 1.5em;
-  padding: 2em;
-  background-color: #e6e6e6;
+/* Page */
+/* Footer */
+/* line 29, ../sass/theme/_layout.scss */
+.footer {
+  background: #ecece9 url("../images/back-body-footer.png") left top repeat;
+  padding-top: 40px;
+  margin-top: 40px;
 }
 
-/* Example form */
-/* line 58, ../sass/theme/_layout.scss */
-.example-form .example-form--input {
-  margin-bottom: 1.5em;
+/* line 35, ../sass/theme/_layout.scss */
+.footer--outer {
+  background-image: url("../images/compass_rose.png");
+  background-repeat: no-repeat;
+  background-position: 520px 100%;
+  height: 380px;
 }
-
-/**
- * Debugging
- *
- * Contains debugging stuff, should only be used in development
- *
- * @author magnify
- */
-/* Add padding bottom to body because of the fixed debug container */
-/* line 11, ../sass/misc/_debug.scss */
-body {
-  padding-bottom: 14em;
+/* line 43, ../sass/theme/_layout.scss */
+.footer--outer .footer--inner {
+  *position: relative;
+  *zoom: 1;
 }
-
-/* line 16, ../sass/misc/_debug.scss */
-.debug {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: yellowgreen;
+/* line 46, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.footer--outer .footer--inner:before, .footer--outer .footer--inner:after {
+  content: "";
+  display: table;
 }
-
-/* line 27, ../sass/misc/_debug.scss */
-.debug--header {
-  padding-right: 1em;
-  padding-left: 1em;
+/* line 50, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.footer--outer .footer--inner:after {
+  clear: both;
 }
-
-/* Breakpoints
-   ================================================================================================================== */
-/* line 37, ../sass/misc/_debug.scss */
-.breakpoint-1, .breakpoint-2, .breakpoint-3 {
-  display: none;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background-color: black;
-  color: white;
-  text-align: center;
+/* line 49, ../sass/theme/_layout.scss */
+.footer--outer .footer--inner #block-block-2 {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
-
-@media only screen and (min-width: 18.75em) {
-  /* line 48, ../sass/misc/_debug.scss */
-  .breakpoint-1 {
-    display: block;
-    width: 18.75em;
-  }
+/* line 53, ../sass/theme/_layout.scss */
+.footer--outer .footer--inner #block-block-3 {
+  float: left;
+  width: 25%;
+  margin-left: 25%;
+  margin-right: -50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
-
-@media only screen and (min-width: 22.5em) {
-  /* line 57, ../sass/misc/_debug.scss */
-  .breakpoint-2 {
-    display: block;
-    width: 22.5em;
-  }
+/* line 57, ../sass/theme/_layout.scss */
+.footer--outer .footer--inner #block-block-4 {
+  float: left;
+  width: 25%;
+  margin-left: 50%;
+  margin-right: -75%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
-
-@media only screen and (min-width: 28em) {
-  /* line 66, ../sass/misc/_debug.scss */
-  .breakpoint-3 {
-    display: block;
-    width: 28em;
-  }
+/* line 61, ../sass/theme/_layout.scss */
+.footer--outer .footer--inner #block-block-1 {
+  float: left;
+  width: 25%;
+  margin-left: 75%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }

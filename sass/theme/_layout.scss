@@ -1,28 +1,16 @@
 /**
  * Layouts
- *
- * This is an example file
- *
- * @author magnify
  */
 
-
-%example-center-layout-container {
+%center-layout-container {
   margin-right: auto;
   margin-left: auto;
-  max-width: 75em;
+  max-width: 960px;
 }
 
+/* Header */
 
-/* Example logo */
-
-.example-logo {
-  font-size: 200%;
-}
-
-/* Example header */
-
-.example-header {
+.header {
   margin-bottom: $margin-bottom;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -30,32 +18,48 @@
   background-color: $gray-lighter;
 }
 
-.example-header--inner {
-  @extend %example-center-layout-container;
+/* Page */
+
+.content-inner {
+  @extend %center-layout-container;
 }
 
 
-/* Example layout */
-
-.example-layout {
-  @extend %example-center-layout-container;
+/* Footer */
+.footer {
+  background: $background url('../images/back-body-footer.png') left top repeat;
+  padding-top: 40px;
+  margin-top: 40px;
 }
 
+.footer--outer {
+  background-image: url('../images/compass_rose.png');
+  background-repeat: no-repeat;
+  background-position: 520px 100%;
+  height: 380px;
 
-/* Example section */
+  @extend %center-layout-container;
 
-.example-section {
-  margin-bottom: $margin-bottom;
-  padding: 2em;
+  .footer--inner {
+    $zen-column-count: 4;
+    $zen-gutter-width: 10px;
 
-  background-color: $gray-lightest;
-}
+    @include zen-grid-container;
 
+    #block-block-2 {
+      @include zen-grid-item(1, 1);
+    }
 
-/* Example form */
+    #block-block-3 {
+      @include zen-grid-item(1, 2);
+    }
 
-.example-form {
-  .example-form--input {
-    margin-bottom: $margin-bottom;
+    #block-block-4 {
+      @include zen-grid-item(1, 3);
+    }
+
+    #block-block-1 {
+      @include zen-grid-item(1, 4);
+    }
   }
 }

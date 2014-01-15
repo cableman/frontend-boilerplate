@@ -149,9 +149,11 @@
     </div> <!-- inner -->
   </div> <!-- content -->
 
-  <footer>
-    <div class="footer-inner">
-      <?php print render($page['footer']); ?>
+  <footer class="footer">
+    <div class="footer--outer">
+      <div class="footer--inner">
+        <?php print render($page['footer']); ?>
+      </div>
     </div>
   </footer>
 </div>
