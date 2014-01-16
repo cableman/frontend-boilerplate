@@ -8,19 +8,16 @@
 
 
 body {
-  background: $background url('../images/back-body.jpg') left top repeat;
+  font-family: $font;
+  font-size: 13px;
   color: $text-color;
-  font: $font;
+//  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  @include text-shadow(rgba($white, 0.4) 0 1px 0);
+  background: $background url('../images/back-body.jpg') left top repeat;
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font: $font;
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 
   /* This fixes huge spaces when a heading wraps onto two lines */
@@ -39,12 +36,12 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 0.3em;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 0.5em;
 }
 

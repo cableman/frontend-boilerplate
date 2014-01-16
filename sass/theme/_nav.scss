@@ -1,0 +1,42 @@
+/**
+ * Navigation
+ */
+
+/* Header menus  */
+
+header {
+  .menu {
+    text-transform: uppercase;
+  }
+
+  .menu li {
+    margin: 0 0 0 4px;
+    padding: 0;
+  }
+
+  .menu>li,
+  .menu>li {
+    float: left;
+    list-style: none;
+  }
+
+  .block-menu-block .menu {
+    float: right;
+  }
+
+  // Main menu
+  .menu-name-main-menu {
+    padding: 30px 0 0;
+    clear: right;
+    margin-right: -8px;
+  }
+
+  .menu-name-main-menu .menu a {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .menu-name-main-menu a {
+    padding: 8px;
+  }
+}

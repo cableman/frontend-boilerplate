@@ -15,6 +15,22 @@ header {
 
   margin-bottom: 20px;
   padding: 20px 8px 0;
+  overflow: hidden;
+
+  .header--inner {
+    $zen-column-count: 4;
+    $zen-gutter-width: 10px;
+    @include zen-grid-container;
+
+
+    .logo {
+      @include zen-grid-item(1, 1);
+    }
+
+    .menu-wrapper {
+      @include zen-grid-item(3, 2);
+    }
+  }
 }
 
 /* Page */
@@ -29,6 +45,10 @@ footer {
   background: $background url('../images/back-body-footer.png') left top repeat;
   padding-top: 40px;
   margin-top: 40px;
+
+  .block-block .content {
+    padding: 8px 8px 0 0;
+  }
 }
 
 .footer--outer {
