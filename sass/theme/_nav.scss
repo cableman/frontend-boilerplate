@@ -20,10 +20,6 @@ header {
     list-style: none;
   }
 
-  .menu {
-    float: right;
-  }
-
   .menu a {
     text-decoration: none;
     color: #333;
@@ -37,9 +33,13 @@ header {
     background: rgba(24,141,220,0.8);
   }
 
+  .block-menu-block {
+    display: inline-block;
+    float: right;
+  }
+
   // Main menu
   .menu-name-main-menu {
-    padding: 20px 0 0;
     clear: right;
     margin-right: -8px;
   }
@@ -56,6 +56,7 @@ header {
   .menu-name-menu-secondary-menu {
     font-size: 11px;
     margin-right: -6px;
+    padding-bottom: 30px;
   }
 
   .menu-name-menu-secondary-menu a {

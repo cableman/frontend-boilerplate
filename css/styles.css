@@ -798,15 +798,11 @@ header .menu > li {
   list-style: none;
 }
 /* line 23, ../sass/theme/_nav.scss */
-header .menu {
-  float: right;
-}
-/* line 27, ../sass/theme/_nav.scss */
 header .menu a {
   text-decoration: none;
   color: #333;
 }
-/* line 33, ../sass/theme/_nav.scss */
+/* line 29, ../sass/theme/_nav.scss */
 header .active a,
 header .menu a:hover {
   color: white;
@@ -814,9 +810,13 @@ header .menu a:hover {
   text-shadow: none;
   background: rgba(24, 141, 220, 0.8);
 }
-/* line 41, ../sass/theme/_nav.scss */
+/* line 36, ../sass/theme/_nav.scss */
+header .block-menu-block {
+  display: inline-block;
+  float: right;
+}
+/* line 42, ../sass/theme/_nav.scss */
 header .menu-name-main-menu {
-  padding: 20px 0 0;
   clear: right;
   margin-right: -8px;
 }
@@ -832,8 +832,9 @@ header .menu-name-main-menu a {
 header .menu-name-menu-secondary-menu {
   font-size: 11px;
   margin-right: -6px;
+  padding-bottom: 30px;
 }
-/* line 61, ../sass/theme/_nav.scss */
+/* line 62, ../sass/theme/_nav.scss */
 header .menu-name-menu-secondary-menu a {
   padding: 6px;
 }
