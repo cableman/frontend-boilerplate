@@ -595,7 +595,7 @@ label {
   background-color: #999999;
   border: 0;
   color: #ecece9;
-  padding: 6px;
+  padding: 6px 12px;
   background: -webkit-gradient(linear, left top, left bottom, from(#bfbfbf), to(#737373));
   background: -moz-linear-gradient(top, #bfbfbf, #737373);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfbfbf', endColorstr='#737373');
@@ -603,6 +603,7 @@ label {
 /* line 41, ../sass/theme/_buttons.scss */
 .button:hover, .mailchimp-lists-user-subscribe-form .form-submit:hover {
   background: #b3b3b3;
+  color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#a6a6a6), to(#8c8c8c));
   background: -moz-linear-gradient(top, #a6a6a6, #8c8c8c);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6a6a6', endColorstr='#8c8c8c');
@@ -842,6 +843,6 @@ header .menu-name-menu-secondary-menu a {
  * Handles form and other mail-chimp related stuff.
  */
 /* line 6, ../sass/modules/_mailchimp.scss */
-.mailchimp-lists-user-subscribe-form .form-text {
+.mailchimp-lists-user-subscribe-form .form-item {
   margin-bottom: 10px;
 }
