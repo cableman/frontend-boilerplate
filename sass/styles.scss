@@ -25,10 +25,13 @@ $zen-gutter-width: 30px;
 @import "base/_base";
 @import "base/_forms";
 
-// Examples
+// Theme
 @import "theme/_breakpoints";
 @import "theme/_buttons";
 @import "theme/_layout";
 
 // Navigation
 @import "theme/_nav";
+
+// Modules
+@import "modules/_mailchimp.scss";

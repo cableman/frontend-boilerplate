@@ -10,7 +10,7 @@
    ================================================================================================================== */
 
 $layout-max-width:    75em;
-$border-radius:       .4em;
+$border-radius:       .5em;
 
 /* Colors
    ================================================================================================================== */
@@ -21,10 +21,11 @@ $shadow:      #AAAAAA;
 $white:       #FFFFFF;
 $blue:        #188DDC;
 
+$button-color: #999;
+
 $gray-lightest:    lighten($black, 90%);
 $gray-lighter:     lighten($black, 80%);
 $gray-light:       lighten($black, 70%);
-$gray:             lighten($black, 60%);
 $gray-dark:        lighten($black, 50%);
 $gray-darker:      lighten($black, 40%);
 $gray-darkest:     lighten($black, 30%);
