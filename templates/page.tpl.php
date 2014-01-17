@@ -105,12 +105,6 @@
         </div>
       <?php endif; ?>
 
-      <?php if ($breadcrumb): ?>
-        <div id="breadcrumb">
-          <?php print $breadcrumb; ?>
-        </div>
-      <?php endif; ?>
-
       <div class="layout-wrapper">
         <div class="primary-content">
           <a id="primary-content"></a>
