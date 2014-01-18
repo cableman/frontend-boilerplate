@@ -40,7 +40,6 @@ header {
 
   // Main menu
   .menu-name-main-menu {
-    clear: right;
     margin-right: -8px;
   }
 
@@ -55,8 +54,9 @@ header {
   // Secondary Menu
   .menu-name-menu-secondary-menu {
     font-size: 11px;
+    height: 20px;
     margin-right: -6px;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .menu-name-menu-secondary-menu a {

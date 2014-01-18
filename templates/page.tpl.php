@@ -75,7 +75,7 @@
  * @see html.tpl.php
  */
 ?>
-<div id="page">
+<div id="page" class="page">
   <header>
     <div class="header--inner">
       <div class="logo">
