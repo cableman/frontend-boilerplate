@@ -75,7 +75,7 @@
  * @see html.tpl.php
  */
 ?>
-<div id="page" class="page">
+<div id="page" class="<?php print $classes?>">
   <header>
     <div class="header--inner">
       <div class="logo">
@@ -105,44 +105,42 @@
         </div>
       <?php endif; ?>
 
-      <div class="layout-wrapper">
-        <div class="primary-content">
-          <a id="primary-content"></a>
-          <?php print render($title_prefix); ?>
-          <?php if ($title): ?>
-            <h1 class="title" id="page-title">
-              <?php print $title; ?>
-            </h1>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
+      <div class="primary-content">
+        <a id="primary-content"></a>
+        <?php print render($title_prefix); ?>
+        <?php if ($title): ?>
+          <h1 class="title" id="page-title">
+            <?php print $title; ?>
+          </h1>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
 
-          <?php if ($tabs): ?>
-            <div class="tabs">
-              <?php print render($tabs); ?>
-            </div>
-          <?php endif; ?>
-
-          <?php if ($action_links): ?>
-            <ul class="action-links">
-              <?php print render($action_links); ?>
-            </ul>
-          <?php endif; ?>
-
-          <?php print render($page['content']); ?>
-        </div>
-
-        <?php if ($page['secondary_content']): ?>
-          <aside class="secondary-content">
-            <?php print render($page['secondary_content']); ?>
-          </aside>
+        <?php if ($tabs): ?>
+          <div class="tabs">
+            <?php print render($tabs); ?>
+          </div>
         <?php endif; ?>
 
-        <?php if ($page['tertiary_content']): ?>
-          <aside class="tertiary-content">
-            <?php print render($page['tertiary_content']); ?>
-          </aside>
+        <?php if ($action_links): ?>
+          <ul class="action-links">
+            <?php print render($action_links); ?>
+          </ul>
         <?php endif; ?>
-      </div> <!-- layout -->
+
+        <?php print render($page['content']); ?>
+      </div>
+
+      <?php if ($page['secondary_content']): ?>
+        <aside class="secondary-content">
+          <?php print render($page['secondary_content']); ?>
+        </aside>
+      <?php endif; ?>
+
+      <?php if ($page['tertiary_content']): ?>
+        <aside class="tertiary-content">
+          <?php print render($page['tertiary_content']); ?>
+        </aside>
+      <?php endif; ?>
 
     </div> <!-- inner -->
   </div> <!-- content -->

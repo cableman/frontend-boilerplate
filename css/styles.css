@@ -432,35 +432,52 @@ em strong {
   transition: background 0.3s linear, color 0.2s linear;
 }
 
-/* line 73, ../sass/base/_base.scss */
-a:link {
+/* line 72, ../sass/base/_base.scss */
+a {
   color: #1469a2;
+}
+/* line 76, ../sass/base/_base.scss */
+a:link, a:visited {
   text-decoration: underline;
 }
-/* line 78, ../sass/base/_base.scss */
-a:visited {
-  color: #115a8b;
-}
-/* line 82, ../sass/base/_base.scss */
-a:hover {
-  color: #0e4c75;
+/* line 81, ../sass/base/_base.scss */
+a:hover, a:focus {
   text-decoration: none;
 }
-/* line 87, ../sass/base/_base.scss */
-a:focus {
-  color: #0e4c75;
+
+/* line 90, ../sass/base/_base.scss */
+h3 a:link, h3 a:visited,
+h2 a:link,
+h2 a:visited {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px dotted #333;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* line 103, ../sass/base/_base.scss */
+h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
+  border: none;
+  outline: none;
+  padding: 3px;
+  margin: -3px -3px -2px;
+  background: #188DDC;
+  background: rgba(24, 141, 220, 0.8);
+  color: #fff;
+  text-shadow: none;
 }
 
 /* Paragraph
    ================================================================================================================== */
-/* line 96, ../sass/base/_base.scss */
+/* line 119, ../sass/base/_base.scss */
 p {
   margin-top: 0;
 }
 
 /* Image
    ================================================================================================================== */
-/* line 104, ../sass/base/_base.scss */
+/* line 127, ../sass/base/_base.scss */
 img {
   display: inline;
   height: auto;
@@ -580,7 +597,7 @@ label {
  * Defines button styles.
  */
 /* line 12, ../sass/theme/_buttons.scss */
-.button, .mailchimp-lists-user-subscribe-form .form-submit {
+.button, .form-submit {
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -594,12 +611,12 @@ label {
   text-shadow: 0.025em 0.025em 0.1em #737373;
 }
 /* line 22, ../sass/theme/_buttons.scss */
-.button:focus, .mailchimp-lists-user-subscribe-form .form-submit:focus, .button:hover, .mailchimp-lists-user-subscribe-form .form-submit:hover, .button:active, .mailchimp-lists-user-subscribe-form .form-submit:active {
+.button:focus, .form-submit:focus, .button:hover, .form-submit:hover, .button:active, .form-submit:active {
   text-decoration: none;
 }
 
 /* line 30, ../sass/theme/_buttons.scss */
-.button, .mailchimp-lists-user-subscribe-form .form-submit {
+.button, .form-submit {
   background-color: #999999;
   border: 0;
   color: #ecece9;
@@ -609,7 +626,7 @@ label {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfbfbf', endColorstr='#737373');
 }
 /* line 41, ../sass/theme/_buttons.scss */
-.button:hover, .mailchimp-lists-user-subscribe-form .form-submit:hover {
+.button:hover, .form-submit:hover {
   background: #b3b3b3;
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#a6a6a6), to(#8c8c8c));
@@ -849,9 +866,13 @@ header .menu-name-menu-secondary-menu a {
 
 /**
  * @file
- * Handles form and other mail-chimp related stuff.
+ * Handles general form related stuff.
  */
-/* line 6, ../sass/modules/_mailchimp.scss */
-.mailchimp-lists-user-subscribe-form .form-item {
+/* line 6, ../sass/modules/_form.scss */
+.form-item {
   margin-bottom: 10px;
+}
+/* line 9, ../sass/modules/_form.scss */
+.form-item .form-required {
+  color: red;
 }
