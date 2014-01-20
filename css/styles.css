@@ -644,14 +644,15 @@ header, .content-inner, .footer--outer {
   max-width: 960px;
 }
 
-/* Header */
-/* line 13, ../sass/theme/_layout.scss */
+/* Header
+   ================================================================================================================== */
+/* line 14, ../sass/theme/_layout.scss */
 header {
   margin-bottom: 20px;
   padding: 20px 8px 0;
   overflow: hidden;
 }
-/* line 20, ../sass/theme/_layout.scss */
+/* line 21, ../sass/theme/_layout.scss */
 header .header--inner {
   *position: relative;
   *zoom: 1;
@@ -665,7 +666,7 @@ header .header--inner:before, header .header--inner:after {
 header .header--inner:after {
   clear: both;
 }
-/* line 26, ../sass/theme/_layout.scss */
+/* line 27, ../sass/theme/_layout.scss */
 header .header--inner .logo {
   float: left;
   width: 25%;
@@ -682,7 +683,7 @@ header .header--inner .logo {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 30, ../sass/theme/_layout.scss */
+/* line 31, ../sass/theme/_layout.scss */
 header .header--inner .menu-wrapper {
   float: left;
   width: 75%;
@@ -700,27 +701,59 @@ header .header--inner .menu-wrapper {
   _overflow-y: visible;
 }
 
-/* Page */
-/* Footer */
-/* line 44, ../sass/theme/_layout.scss */
+/* Page
+   ================================================================================================================== */
+/* line 43, ../sass/theme/_layout.scss */
+.content-inner .field-name-field-inline-gallery .field-item {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* line 48, ../sass/theme/_layout.scss */
+.content-inner .field-name-field-inline-gallery .field-item:nth-child(4n+4) {
+  margin-right: 0;
+}
+/* line 53, ../sass/theme/_layout.scss */
+.content-inner .image--title {
+  padding: 8px 8px 0 8px;
+  background: white;
+  background: rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 0px 1px 2px #aaaaaa;
+  -o-box-shadow: 0px 1px 2px #aaaaaa;
+  -webkit-box-shadow: 0px 1px 2px #aaaaaa;
+  box-shadow: 0px 1px 2px #aaaaaa;
+}
+/* line 62, ../sass/theme/_layout.scss */
+.content-inner .image--title img {
+  margin-bottom: 8px;
+}
+/* line 66, ../sass/theme/_layout.scss */
+.content-inner .image--title .title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Footer
+   ================================================================================================================== */
+/* line 76, ../sass/theme/_layout.scss */
 footer {
   background: #ecece9 url("../images/back-body-footer.png") left top repeat;
   padding-top: 40px;
   margin-top: 40px;
 }
-/* line 49, ../sass/theme/_layout.scss */
+/* line 81, ../sass/theme/_layout.scss */
 footer .block-block .content {
   padding: 8px 8px 0 0;
 }
 
-/* line 54, ../sass/theme/_layout.scss */
+/* line 86, ../sass/theme/_layout.scss */
 .footer--outer {
   background-image: url("../images/compass_rose.png");
   background-repeat: no-repeat;
   background-position: 520px 100%;
   height: 380px;
 }
-/* line 62, ../sass/theme/_layout.scss */
+/* line 94, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner {
   *position: relative;
   *zoom: 1;
@@ -734,7 +767,7 @@ footer .block-block .content {
 .footer--outer .footer--inner:after {
   clear: both;
 }
-/* line 68, ../sass/theme/_layout.scss */
+/* line 100, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-mailchimp-lists-nyheder {
   float: left;
   width: 25%;
@@ -751,7 +784,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 72, ../sass/theme/_layout.scss */
+/* line 104, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-2 {
   float: left;
   width: 25%;
@@ -768,7 +801,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 76, ../sass/theme/_layout.scss */
+/* line 108, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-3 {
   float: left;
   width: 25%;
@@ -785,7 +818,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 80, ../sass/theme/_layout.scss */
+/* line 112, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-4 {
   float: left;
   width: 25%;

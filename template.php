@@ -28,3 +28,7 @@ function nebula_preprocess_page(&$variables) {
   // Set the class.
   $variables['classes_array'][] = $class;
 }
+
+function nebula_preprocess_field(&$variables, $hook) {
+  $t = 1;
+}

@@ -8,7 +8,8 @@
   max-width: 960px;
 }
 
-/* Header */
+/* Header
+   ================================================================================================================== */
 
 header {
   @extend %center-layout-container;
@@ -33,14 +34,45 @@ header {
   }
 }
 
-/* Page */
+/* Page
+   ================================================================================================================== */
 
 .content-inner {
   @extend %center-layout-container;
+
+  .field-name-field-inline-gallery .field-item {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
+  }
+
+  .image--title {
+    padding: 8px 8px 0 8px;
+    background: $white;
+    background: rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0px 1px 2px #aaaaaa;
+    -o-box-shadow: 0px 1px 2px #aaaaaa;
+    -webkit-box-shadow: 0px 1px 2px #aaaaaa;
+    box-shadow: 0px 1px 2px #aaaaaa;
+
+    img {
+      margin-bottom: 8px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+  }
 }
 
+/* Footer
+   ================================================================================================================== */
 
-/* Footer */
 footer {
   background: $background url('../images/back-body-footer.png') left top repeat;
   padding-top: 40px;
