@@ -43,12 +43,14 @@ header {
     @extend %center-layout-container;
   }
 
+  $zen-column-count: 4;
+  $zen-gutter-width: 10px;
+
   /**
    * One column layout.
    */
   &.layout--one-col .content-inner {
     $zen-column-count: 1;
-    $zen-gutter-width: 10px;
     @include zen-grid-container;
 
     .primary-content {
@@ -61,7 +63,6 @@ header {
    */
   &.layout--two-col--left .content-inner {
     $zen-column-count: 4;
-    $zen-gutter-width: 10px;
     @include zen-grid-container;
 
     .primary-content {
@@ -78,7 +79,6 @@ header {
  */
   &.layout--two-col--right .content-inner {
     $zen-column-count: 4;
-    $zen-gutter-width: 10px;
     @include zen-grid-container;
 
     .primary-content {
@@ -94,8 +94,7 @@ header {
    * Three column layout.
    */
   &.layout--three-col .content-inner {
-    $zen-column-count: 4;
-    $zen-gutter-width: 10px;
+
     @include zen-grid-container;
 
     .primary-content {

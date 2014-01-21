@@ -424,28 +424,20 @@ em strong {
 
 /* Links
    ================================================================================================================== */
-/* line 65, ../sass/base/_base.scss */
-.page a {
-  -moz-transition: background 0.3s linear, color 0.2s linear;
-  -webkit-transition: background 0.3s linear, color 0.2s linear;
-  -o-transition: background 0.3s linear, color 0.2s linear;
-  transition: background 0.3s linear, color 0.2s linear;
-}
-
-/* line 72, ../sass/base/_base.scss */
+/* line 64, ../sass/base/_base.scss */
 a {
   color: #1469a2;
 }
-/* line 76, ../sass/base/_base.scss */
+/* line 68, ../sass/base/_base.scss */
 a:link, a:visited {
   text-decoration: underline;
 }
-/* line 81, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 90, ../sass/base/_base.scss */
+/* line 82, ../sass/base/_base.scss */
 h3 a:link, h3 a:visited,
 h2 a:link,
 h2 a:visited {
@@ -456,7 +448,7 @@ h2 a:visited {
   line-height: 1em;
 }
 
-/* line 103, ../sass/base/_base.scss */
+/* line 95, ../sass/base/_base.scss */
 h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
   border: none;
   outline: none;
@@ -470,14 +462,14 @@ h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
 
 /* Paragraph
    ================================================================================================================== */
-/* line 119, ../sass/base/_base.scss */
+/* line 111, ../sass/base/_base.scss */
 p {
   margin-top: 0;
 }
 
 /* Image
    ================================================================================================================== */
-/* line 127, ../sass/base/_base.scss */
+/* line 119, ../sass/base/_base.scss */
 img {
   display: inline;
   height: auto;
@@ -718,7 +710,7 @@ header .header--inner .menu-wrapper {
    * Three column layout.
    */
 }
-/* line 49, ../sass/theme/_layout.scss */
+/* line 52, ../sass/theme/_layout.scss */
 .page.layout--one-col .content-inner {
   *position: relative;
   *zoom: 1;
@@ -732,7 +724,7 @@ header .header--inner .menu-wrapper {
 .page.layout--one-col .content-inner:after {
   clear: both;
 }
-/* line 54, ../sass/theme/_layout.scss */
+/* line 56, ../sass/theme/_layout.scss */
 .page.layout--one-col .content-inner .primary-content {
   float: left;
   width: 100%;
@@ -749,7 +741,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 62, ../sass/theme/_layout.scss */
+/* line 64, ../sass/theme/_layout.scss */
 .page.layout--two-col--left .content-inner {
   *position: relative;
   *zoom: 1;
@@ -763,7 +755,7 @@ header .header--inner .menu-wrapper {
 .page.layout--two-col--left .content-inner:after {
   clear: both;
 }
-/* line 67, ../sass/theme/_layout.scss */
+/* line 68, ../sass/theme/_layout.scss */
 .page.layout--two-col--left .content-inner .primary-content {
   float: left;
   width: 75%;
@@ -780,7 +772,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 71, ../sass/theme/_layout.scss */
+/* line 72, ../sass/theme/_layout.scss */
 .page.layout--two-col--left .content-inner .secondary-content {
   float: left;
   width: 25%;
@@ -797,7 +789,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 79, ../sass/theme/_layout.scss */
+/* line 80, ../sass/theme/_layout.scss */
 .page.layout--two-col--right .content-inner {
   *position: relative;
   *zoom: 1;
@@ -859,7 +851,7 @@ header .header--inner .menu-wrapper {
 .page.layout--three-col .content-inner:after {
   clear: both;
 }
-/* line 101, ../sass/theme/_layout.scss */
+/* line 100, ../sass/theme/_layout.scss */
 .page.layout--three-col .content-inner .primary-content {
   float: left;
   width: 50%;
@@ -876,7 +868,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 105, ../sass/theme/_layout.scss */
+/* line 104, ../sass/theme/_layout.scss */
 .page.layout--three-col .content-inner .secondary-content {
   float: left;
   width: 25%;
@@ -893,7 +885,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 109, ../sass/theme/_layout.scss */
+/* line 108, ../sass/theme/_layout.scss */
 .page.layout--three-col .content-inner .tertiary_content {
   float: left;
   width: 25%;
@@ -913,25 +905,25 @@ header .header--inner .menu-wrapper {
 
 /* Footer
    ================================================================================================================== */
-/* line 118, ../sass/theme/_layout.scss */
+/* line 117, ../sass/theme/_layout.scss */
 footer {
   background: #ecece9 url("../images/back-body-footer.png") left top repeat;
   padding-top: 40px;
   margin-top: 40px;
 }
-/* line 123, ../sass/theme/_layout.scss */
+/* line 122, ../sass/theme/_layout.scss */
 footer .block-block .content {
   padding: 8px 8px 0 0;
 }
 
-/* line 128, ../sass/theme/_layout.scss */
+/* line 127, ../sass/theme/_layout.scss */
 .footer--outer {
   background-image: url("../images/compass_rose.png");
   background-repeat: no-repeat;
   background-position: 520px 100%;
   height: 380px;
 }
-/* line 136, ../sass/theme/_layout.scss */
+/* line 135, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner {
   *position: relative;
   *zoom: 1;
@@ -945,7 +937,7 @@ footer .block-block .content {
 .footer--outer .footer--inner:after {
   clear: both;
 }
-/* line 142, ../sass/theme/_layout.scss */
+/* line 141, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-mailchimp-lists-nyheder {
   float: left;
   width: 25%;
@@ -962,7 +954,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 146, ../sass/theme/_layout.scss */
+/* line 145, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-2 {
   float: left;
   width: 25%;
@@ -979,7 +971,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 150, ../sass/theme/_layout.scss */
+/* line 149, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-3 {
   float: left;
   width: 25%;
@@ -996,7 +988,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 154, ../sass/theme/_layout.scss */
+/* line 153, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-4 {
   float: left;
   width: 25%;
@@ -1060,85 +1052,88 @@ footer .block-block .content {
 header .menu {
   text-transform: uppercase;
 }
-/* line 13, ../sass/theme/_nav.scss */
+/* line 12, ../sass/theme/_nav.scss */
 header .menu li {
   margin: 0 0 0 4px;
   padding: 0;
 }
-/* line 19, ../sass/theme/_nav.scss */
-header .menu > li,
+/* line 17, ../sass/theme/_nav.scss */
 header .menu > li {
   float: left;
   list-style: none;
 }
-/* line 24, ../sass/theme/_nav.scss */
+/* line 22, ../sass/theme/_nav.scss */
 header .menu a {
+  -moz-transition: background 0.3s linear, color 0.2s linear;
+  -webkit-transition: background 0.3s linear, color 0.2s linear;
+  -o-transition: background 0.3s linear, color 0.2s linear;
+  transition: background 0.3s linear, color 0.2s linear;
   text-decoration: none;
   color: #333;
 }
-/* line 30, ../sass/theme/_nav.scss */
-header .active a,
+/* line 33, ../sass/theme/_nav.scss */
+header .menu .active a,
 header .menu a:hover {
   color: white;
   background: #188ddc;
   text-shadow: none;
   background: rgba(24, 141, 220, 0.8);
 }
-/* line 37, ../sass/theme/_nav.scss */
+/* line 41, ../sass/theme/_nav.scss */
 header .block-menu-block {
   display: inline-block;
   float: right;
 }
-/* line 43, ../sass/theme/_nav.scss */
+/* line 47, ../sass/theme/_nav.scss */
 header .menu-name-main-menu {
   margin-right: -8px;
 }
-/* line 47, ../sass/theme/_nav.scss */
+/* line 51, ../sass/theme/_nav.scss */
 header .menu-name-main-menu .menu a {
   font-size: 14px;
 }
-/* line 51, ../sass/theme/_nav.scss */
+/* line 55, ../sass/theme/_nav.scss */
 header .menu-name-main-menu a {
   padding: 8px;
 }
-/* line 56, ../sass/theme/_nav.scss */
+/* line 60, ../sass/theme/_nav.scss */
 header .menu-name-menu-secondary-menu {
   font-size: 11px;
   height: 20px;
   margin-right: -6px;
   margin-bottom: 20px;
 }
-/* line 63, ../sass/theme/_nav.scss */
+/* line 67, ../sass/theme/_nav.scss */
 header .menu-name-menu-secondary-menu a {
   padding: 6px;
 }
 
 /* Sidebar menu
    ================================================================================================================== */
-/* line 71, ../sass/theme/_nav.scss */
+/* line 75, ../sass/theme/_nav.scss */
 .content-wrapper .block-menu-block {
   padding: 22px 0 0;
   background: transparent url(../images/back-sidebarmenu-top.png) left top no-repeat;
   width: 220px;
 }
-/* line 76, ../sass/theme/_nav.scss */
+/* line 80, ../sass/theme/_nav.scss */
 .content-wrapper .block-menu-block .content {
   padding: 0 0 26px;
   background: transparent url(../images/back-sidebarmenu-bottom.png) left bottom no-repeat;
 }
-/* line 81, ../sass/theme/_nav.scss */
+/* line 85, ../sass/theme/_nav.scss */
 .content-wrapper .block-menu-block .menu {
   padding: 0;
   margin: 0;
   background: transparent url(../images/back-sidebarmenu.png) left top repeat-y;
 }
-/* line 86, ../sass/theme/_nav.scss */
+/* line 90, ../sass/theme/_nav.scss */
 .content-wrapper .block-menu-block .menu > li {
   list-style: none none outside;
   margin: 0;
   padding: 0;
 }
-/* line 91, ../sass/theme/_nav.scss */
+/* line 95, ../sass/theme/_nav.scss */
 .content-wrapper .block-menu-block .menu > li a {
   background: transparent url(../images/back-sidebarmenu-default.png) left top repeat-x;
   display: block;
@@ -1147,7 +1142,7 @@ header .menu-name-menu-secondary-menu a {
   color: #555555;
   text-decoration: none;
 }
-/* line 106, ../sass/theme/_nav.scss */
+/* line 110, ../sass/theme/_nav.scss */
 .content-wrapper .block-menu-block .menu > li a.active, .content-wrapper .block-menu-block .menu > li a:hover {
   background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-y;
 }
