@@ -381,64 +381,63 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-top: 0;
+  margin-bottom: 0.2em;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
   /* Voodoo to enable ligatures and kerning */
   text-rendering: optimizeLegibility;
 }
 
-/* line 30, ../sass/base/_base.scss */
+/* line 31, ../sass/base/_base.scss */
 h1, h2, h3 {
   color: #333333;
 }
 
-/* line 34, ../sass/base/_base.scss */
+/* line 35, ../sass/base/_base.scss */
 h1 {
-  margin-bottom: 0.2em;
+  font-size: 26px;
 }
 
-/* line 38, ../sass/base/_base.scss */
+/* line 39, ../sass/base/_base.scss */
 h2 {
   font-size: 18px;
-  margin-bottom: 0.1em;
 }
 
 /* line 43, ../sass/base/_base.scss */
 h3 {
   font-size: 14px;
-  margin-bottom: 0.1em;
 }
 
-/* line 48, ../sass/base/_base.scss */
+/* line 47, ../sass/base/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 53, ../sass/base/_base.scss */
+/* line 52, ../sass/base/_base.scss */
 em {
   font-style: italic;
 }
-/* line 56, ../sass/base/_base.scss */
+/* line 55, ../sass/base/_base.scss */
 em strong {
   font-weight: bold;
 }
 
 /* Links
    ================================================================================================================== */
-/* line 65, ../sass/base/_base.scss */
+/* line 64, ../sass/base/_base.scss */
 a {
   color: #1469a2;
 }
-/* line 69, ../sass/base/_base.scss */
+/* line 68, ../sass/base/_base.scss */
 a:link, a:visited {
   text-decoration: underline;
 }
-/* line 74, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 83, ../sass/base/_base.scss */
+/* line 82, ../sass/base/_base.scss */
 h3 a:link, h3 a:visited,
 h2 a:link,
 h2 a:visited {
@@ -449,7 +448,7 @@ h2 a:visited {
   line-height: 1em;
 }
 
-/* line 96, ../sass/base/_base.scss */
+/* line 95, ../sass/base/_base.scss */
 h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
   border: none;
   outline: none;
@@ -463,14 +462,14 @@ h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
 
 /* Paragraph
    ================================================================================================================== */
-/* line 112, ../sass/base/_base.scss */
+/* line 111, ../sass/base/_base.scss */
 p {
   margin-top: 0;
 }
 
 /* Image
    ================================================================================================================== */
-/* line 120, ../sass/base/_base.scss */
+/* line 119, ../sass/base/_base.scss */
 img {
   display: inline;
   height: auto;
