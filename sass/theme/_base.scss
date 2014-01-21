@@ -1,0 +1,36 @@
+/**
+ * Style of basic elements one every page.
+ */
+
+/**
+ * Style image gallery fields on static pages.
+   ================================================================================================================== */
+
+.field-name-field-inline-gallery .field-item {
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  &:nth-child(4n+4) {
+    margin-right: 0;
+  }
+}
+
+.image--title {
+  padding: 8px 8px 0 8px;
+  background: $white;
+  background: rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 0px 1px 2px #aaaaaa;
+  -o-box-shadow: 0px 1px 2px #aaaaaa;
+  -webkit-box-shadow: 0px 1px 2px #aaaaaa;
+  box-shadow: 0px 1px 2px #aaaaaa;
+
+  img {
+    margin-bottom: 8px;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}

@@ -37,35 +37,77 @@ header {
 /* Page
    ================================================================================================================== */
 
-.content-inner {
-  @extend %center-layout-container;
+.page {
 
-  .field-name-field-inline-gallery .field-item {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
+  .content-inner {
+    @extend %center-layout-container;
+  }
 
-    &:nth-child(4n+4) {
-      margin-right: 0;
+  /**
+   * One column layout.
+   */
+  &.layout--one-col .content-inner {
+    $zen-column-count: 1;
+    $zen-gutter-width: 10px;
+    @include zen-grid-container;
+
+    .primary-content {
+      @include zen-grid-item(1, 1);
     }
   }
 
-  .image--title {
-    padding: 8px 8px 0 8px;
-    background: $white;
-    background: rgba(255, 255, 255, 0.7);
-    -moz-box-shadow: 0px 1px 2px #aaaaaa;
-    -o-box-shadow: 0px 1px 2px #aaaaaa;
-    -webkit-box-shadow: 0px 1px 2px #aaaaaa;
-    box-shadow: 0px 1px 2px #aaaaaa;
+  /**
+   * Two column layout left.
+   */
+  &.layout--two-col--left .content-inner {
+    $zen-column-count: 4;
+    $zen-gutter-width: 10px;
+    @include zen-grid-container;
 
-    img {
-      margin-bottom: 8px;
+    .primary-content {
+      @include zen-grid-item(3, 2);
     }
 
-    .title {
-      text-align: center;
-      margin-bottom: 8px;
+    .secondary-content {
+      @include zen-grid-item(1, 1);
+    }
+  }
+
+  /**
+ * Two column layout right.
+ */
+  &.layout--two-col--right .content-inner {
+    $zen-column-count: 4;
+    $zen-gutter-width: 10px;
+    @include zen-grid-container;
+
+    .primary-content {
+      @include zen-grid-item(3, 1);
+    }
+
+    .tertiary_content {
+      @include zen-grid-item(1, 4);
+    }
+  }
+
+  /**
+   * Three column layout.
+   */
+  &.layout--three-col .content-inner {
+    $zen-column-count: 4;
+    $zen-gutter-width: 10px;
+    @include zen-grid-container;
+
+    .primary-content {
+      @include zen-grid-item(2, 2);
+    }
+
+    .secondary-content {
+      @include zen-grid-item(1, 1);
+    }
+
+    .tertiary_content {
+      @include zen-grid-item(1, 4);
     }
   }
 }

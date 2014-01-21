@@ -638,7 +638,7 @@ label {
  * Layouts
  */
 /* line 5, ../sass/theme/_layout.scss */
-header, .content-inner, .footer--outer {
+header, .page .content-inner, .footer--outer {
   margin-right: auto;
   margin-left: auto;
   max-width: 960px;
@@ -703,57 +703,235 @@ header .header--inner .menu-wrapper {
 
 /* Page
    ================================================================================================================== */
-/* line 43, ../sass/theme/_layout.scss */
-.content-inner .field-name-field-inline-gallery .field-item {
+/* line 40, ../sass/theme/_layout.scss */
+.page {
+  /**
+   * One column layout.
+   */
+  /**
+   * Two column layout left.
+   */
+ /**
+* Two column layout right.
+*/
+  /**
+   * Three column layout.
+   */
+}
+/* line 49, ../sass/theme/_layout.scss */
+.page.layout--one-col .content-inner {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 46, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.page.layout--one-col .content-inner:before, .page.layout--one-col .content-inner:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.page.layout--one-col .content-inner:after {
+  clear: both;
+}
+/* line 54, ../sass/theme/_layout.scss */
+.page.layout--one-col .content-inner .primary-content {
   float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-/* line 48, ../sass/theme/_layout.scss */
-.content-inner .field-name-field-inline-gallery .field-item:nth-child(4n+4) {
-  margin-right: 0;
-}
-/* line 53, ../sass/theme/_layout.scss */
-.content-inner .image--title {
-  padding: 8px 8px 0 8px;
-  background: white;
-  background: rgba(255, 255, 255, 0.7);
-  -moz-box-shadow: 0px 1px 2px #aaaaaa;
-  -o-box-shadow: 0px 1px 2px #aaaaaa;
-  -webkit-box-shadow: 0px 1px 2px #aaaaaa;
-  box-shadow: 0px 1px 2px #aaaaaa;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 /* line 62, ../sass/theme/_layout.scss */
-.content-inner .image--title img {
-  margin-bottom: 8px;
+.page.layout--two-col--left .content-inner {
+  *position: relative;
+  *zoom: 1;
 }
-/* line 66, ../sass/theme/_layout.scss */
-.content-inner .image--title .title {
-  text-align: center;
-  margin-bottom: 8px;
+/* line 46, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.page.layout--two-col--left .content-inner:before, .page.layout--two-col--left .content-inner:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.page.layout--two-col--left .content-inner:after {
+  clear: both;
+}
+/* line 67, ../sass/theme/_layout.scss */
+.page.layout--two-col--left .content-inner .primary-content {
+  float: left;
+  width: 75%;
+  margin-left: 25%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 71, ../sass/theme/_layout.scss */
+.page.layout--two-col--left .content-inner .secondary-content {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 79, ../sass/theme/_layout.scss */
+.page.layout--two-col--right .content-inner {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 46, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.page.layout--two-col--right .content-inner:before, .page.layout--two-col--right .content-inner:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.page.layout--two-col--right .content-inner:after {
+  clear: both;
+}
+/* line 84, ../sass/theme/_layout.scss */
+.page.layout--two-col--right .content-inner .primary-content {
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 88, ../sass/theme/_layout.scss */
+.page.layout--two-col--right .content-inner .tertiary_content {
+  float: left;
+  width: 25%;
+  margin-left: 75%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 96, ../sass/theme/_layout.scss */
+.page.layout--three-col .content-inner {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 46, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.page.layout--three-col .content-inner:before, .page.layout--three-col .content-inner:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.page.layout--three-col .content-inner:after {
+  clear: both;
+}
+/* line 101, ../sass/theme/_layout.scss */
+.page.layout--three-col .content-inner .primary-content {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: -75%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 105, ../sass/theme/_layout.scss */
+.page.layout--three-col .content-inner .secondary-content {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 109, ../sass/theme/_layout.scss */
+.page.layout--three-col .content-inner .tertiary_content {
+  float: left;
+  width: 25%;
+  margin-left: 75%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
 /* Footer
    ================================================================================================================== */
-/* line 76, ../sass/theme/_layout.scss */
+/* line 118, ../sass/theme/_layout.scss */
 footer {
   background: #ecece9 url("../images/back-body-footer.png") left top repeat;
   padding-top: 40px;
   margin-top: 40px;
 }
-/* line 81, ../sass/theme/_layout.scss */
+/* line 123, ../sass/theme/_layout.scss */
 footer .block-block .content {
   padding: 8px 8px 0 0;
 }
 
-/* line 86, ../sass/theme/_layout.scss */
+/* line 128, ../sass/theme/_layout.scss */
 .footer--outer {
   background-image: url("../images/compass_rose.png");
   background-repeat: no-repeat;
   background-position: 520px 100%;
   height: 380px;
 }
-/* line 94, ../sass/theme/_layout.scss */
+/* line 136, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner {
   *position: relative;
   *zoom: 1;
@@ -767,7 +945,7 @@ footer .block-block .content {
 .footer--outer .footer--inner:after {
   clear: both;
 }
-/* line 100, ../sass/theme/_layout.scss */
+/* line 142, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-mailchimp-lists-nyheder {
   float: left;
   width: 25%;
@@ -784,7 +962,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 104, ../sass/theme/_layout.scss */
+/* line 146, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-2 {
   float: left;
   width: 25%;
@@ -801,7 +979,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 108, ../sass/theme/_layout.scss */
+/* line 150, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-3 {
   float: left;
   width: 25%;
@@ -818,7 +996,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 112, ../sass/theme/_layout.scss */
+/* line 154, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-4 {
   float: left;
   width: 25%;
@@ -834,6 +1012,43 @@ footer .block-block .content {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+}
+
+/**
+ * Style of basic elements one every page.
+ */
+/**
+ * Style image gallery fields on static pages.
+   ================================================================================================================== */
+/* line 9, ../sass/theme/_base.scss */
+.field-name-field-inline-gallery .field-item {
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+/* line 14, ../sass/theme/_base.scss */
+.field-name-field-inline-gallery .field-item:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+/* line 19, ../sass/theme/_base.scss */
+.image--title {
+  padding: 8px 8px 0 8px;
+  background: white;
+  background: rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 0px 1px 2px #aaaaaa;
+  -o-box-shadow: 0px 1px 2px #aaaaaa;
+  -webkit-box-shadow: 0px 1px 2px #aaaaaa;
+  box-shadow: 0px 1px 2px #aaaaaa;
+}
+/* line 28, ../sass/theme/_base.scss */
+.image--title img {
+  margin-bottom: 8px;
+}
+/* line 32, ../sass/theme/_base.scss */
+.image--title .title {
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 /**
