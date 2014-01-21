@@ -380,64 +380,65 @@ body {
 /* line 18, ../sass/base/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  margin-top: 0;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
   /* Voodoo to enable ligatures and kerning */
   text-rendering: optimizeLegibility;
 }
 
-/* line 28, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 h1, h2, h3 {
   color: #333333;
 }
 
-/* line 32, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 h1 {
   margin-bottom: 0.6em;
 }
 
-/* line 36, ../sass/base/_base.scss */
+/* line 38, ../sass/base/_base.scss */
 h2 {
   font-size: 18px;
   margin-bottom: 0.3em;
 }
 
-/* line 41, ../sass/base/_base.scss */
+/* line 43, ../sass/base/_base.scss */
 h3 {
   font-size: 14px;
   margin-bottom: 0.5em;
 }
 
-/* line 46, ../sass/base/_base.scss */
+/* line 48, ../sass/base/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 51, ../sass/base/_base.scss */
+/* line 53, ../sass/base/_base.scss */
 em {
   font-style: italic;
 }
-/* line 54, ../sass/base/_base.scss */
+/* line 56, ../sass/base/_base.scss */
 em strong {
   font-weight: bold;
 }
 
 /* Links
    ================================================================================================================== */
-/* line 64, ../sass/base/_base.scss */
+/* line 66, ../sass/base/_base.scss */
 a {
   color: #1469a2;
 }
-/* line 68, ../sass/base/_base.scss */
+/* line 70, ../sass/base/_base.scss */
 a:link, a:visited {
   text-decoration: underline;
 }
-/* line 73, ../sass/base/_base.scss */
+/* line 75, ../sass/base/_base.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 82, ../sass/base/_base.scss */
+/* line 84, ../sass/base/_base.scss */
 h3 a:link, h3 a:visited,
 h2 a:link,
 h2 a:visited {
@@ -448,7 +449,7 @@ h2 a:visited {
   line-height: 1em;
 }
 
-/* line 95, ../sass/base/_base.scss */
+/* line 97, ../sass/base/_base.scss */
 h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
   border: none;
   outline: none;
@@ -462,14 +463,14 @@ h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
 
 /* Paragraph
    ================================================================================================================== */
-/* line 111, ../sass/base/_base.scss */
+/* line 113, ../sass/base/_base.scss */
 p {
   margin-top: 0;
 }
 
 /* Image
    ================================================================================================================== */
-/* line 119, ../sass/base/_base.scss */
+/* line 121, ../sass/base/_base.scss */
 img {
   display: inline;
   height: auto;
