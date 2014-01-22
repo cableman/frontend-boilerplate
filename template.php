@@ -39,4 +39,13 @@ function nebula_preprocess_node(&$variables) {
   if (isset($variables['view_mode'])) {
     $variables['theme_hook_suggestions'][] = 'node__view_mode__' . $variables['view_mode'];
   }
+
+  // If it is a staff profile node, move the name and position together.
+  if ($variables['type'] == 'staff_profile') {
+    // This is a evil hack.
+    $title = $variables['content']['field_profile_name'][0]['#markup'];
+    $title .= ' <span class="position">(' . $variables['content']['field_profile_position'][0]['#markup'] . ')</span>';
+    $variables['content']['field_profile_name'][0]['#markup'] = '<h2 class="staff--titel">' . $title . '</h2>';
+    unset($variables['content']['field_profile_position']);
+  }
 }

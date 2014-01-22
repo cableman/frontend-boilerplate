@@ -1013,7 +1013,7 @@ footer .block-block .content {
  * Default image style.
    ================================================================================================================== */
 /* line 9, ../sass/theme/_base.scss */
-.image--title, .view-staff .staff--left .img {
+.image--title, .view-staff .staff--left img {
   padding: 8px;
   background: white;
   background: rgba(255, 255, 255, 0.7);
@@ -1187,7 +1187,16 @@ header .menu-name-menu-secondary-menu a {
 .view-staff:after {
   clear: both;
 }
-/* line 12, ../sass/modules/_profile.scss */
+/* line 11, ../sass/modules/_profile.scss */
+.view-staff .staff--row {
+  margin-bottom: 20px;
+}
+/* line 15, ../sass/modules/_profile.scss */
+.view-staff .staff--titel {
+  font-size: 22px;
+  padding-left: 5px;
+}
+/* line 20, ../sass/modules/_profile.scss */
 .view-staff .staff--left {
   float: left;
   width: 25%;
@@ -1204,7 +1213,7 @@ header .menu-name-menu-secondary-menu a {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 20, ../sass/modules/_profile.scss */
+/* line 28, ../sass/modules/_profile.scss */
 .view-staff .staff--right {
   float: left;
   width: 75%;

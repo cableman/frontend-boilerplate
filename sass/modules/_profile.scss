@@ -8,9 +8,17 @@
 
   @include zen-grid-container;
 
+  .staff--row {
+    margin-bottom: 20px;
+  }
+
+  .staff--titel {
+    font-size: 22px;
+    padding-left: 5px;
+  }
 
   .staff--left {
-    .img {
+    img {
       @extend %image;
     }
 
