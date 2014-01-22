@@ -1,0 +1,23 @@
+/**
+ * @file
+ * Handles the staff profile page.
+ */
+
+.view-staff {
+  $zen-column-count: 4;
+
+  @include zen-grid-container;
+
+
+  .staff--left {
+    .img {
+      @extend %image;
+    }
+
+    @include zen-grid-item(1, 1);
+  }
+
+  .staff--right {
+    @include zen-grid-item(3, 2);
+  }
+}

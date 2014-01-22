@@ -10,7 +10,7 @@
 
 /* Zen Grids - http://zengrids.com */
 $zen-column-count: 12;
-$zen-gutter-width: 30px;
+$zen-gutter-width: 10px;
 
 @import "zen";
 
@@ -36,3 +36,4 @@ $zen-gutter-width: 30px;
 
 // Modules
 @import "modules/_form.scss";
+@import "modules/_profile.scss";

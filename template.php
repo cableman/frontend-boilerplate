@@ -29,6 +29,14 @@ function nebula_preprocess_page(&$variables) {
   $variables['classes_array'][] = $class;
 }
 
-function nebula_preprocess_field(&$variables, $hook) {
-  $t = 1;
+/**
+ * Implements hook_preprocess_node().
+ *
+ * Add suggestion for nodes based on view mode.
+ */
+function nebula_preprocess_node(&$variables) {
+  // Add tpl suggestions for node view modes.
+  if (isset($variables['view_mode'])) {
+    $variables['theme_hook_suggestions'][] = 'node__view_mode__' . $variables['view_mode'];
+  }
 }

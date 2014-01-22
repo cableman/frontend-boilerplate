@@ -20,9 +20,8 @@ header {
 
   .header--inner {
     $zen-column-count: 4;
-    $zen-gutter-width: 10px;
-    @include zen-grid-container;
 
+    @include zen-grid-container;
 
     .logo {
       @include zen-grid-item(1, 1);
@@ -44,7 +43,6 @@ header {
   }
 
   $zen-column-count: 4;
-  $zen-gutter-width: 10px;
 
   /**
    * One column layout.
@@ -134,7 +132,6 @@ footer {
 
   .footer--inner {
     $zen-column-count: 4;
-    $zen-gutter-width: 10px;
 
     @include zen-grid-container;
 
