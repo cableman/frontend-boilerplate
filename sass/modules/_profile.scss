@@ -27,5 +27,9 @@
 
   .staff--right {
     @include zen-grid-item(3, 2);
+
+    .field-label {
+      font-weight: normal;
+    }
   }
 }

@@ -1010,43 +1010,58 @@ footer .block-block .content {
  * Style of basic elements one every page.
  */
 /**
+ * Theme variables
+ *
+ * This is an example file
+ *
+ * @author magnify
+ */
+/* Layout
+   ================================================================================================================== */
+/* Colors
+   ================================================================================================================== */
+/* Typograhy
+   ================================================================================================================== */
+/* Link colors
+   ================================================================================================================== */
+/**
  * Default image style.
    ================================================================================================================== */
-/* line 9, ../sass/theme/_base.scss */
-.image--title, .view-staff .staff--left img {
+/* line 12, ../sass/theme/_base.scss */
+.image--title, .image--content, .news--list img, .view-staff .staff--left img {
   padding: 8px;
   background: white;
   background: rgba(255, 255, 255, 0.7);
   margin-bottom: 8px;
-  -moz-box-shadow: 0px 1px 2px 0 0 0;
-  -o-box-shadow: 0px 1px 2px 0 0 0;
-  -webkit-box-shadow: 0px 1px 2px 0 0 0;
-  box-shadow: 0px 1px 2px 0 0 0;
+  -moz-box-shadow: 0px 1px 2px #aaaaaa;
+  -o-box-shadow: 0px 1px 2px #aaaaaa;
+  -webkit-box-shadow: 0px 1px 2px #aaaaaa;
+  box-shadow: 0px 1px 2px #aaaaaa;
 }
 
 /**
  * Style image gallery fields on static pages.
    ================================================================================================================== */
-/* line 24, ../sass/theme/_base.scss */
+/* line 27, ../sass/theme/_base.scss */
 .field-name-field-inline-gallery .field-item {
   float: left;
   margin-right: 8px;
   margin-bottom: 8px;
 }
-/* line 29, ../sass/theme/_base.scss */
+/* line 32, ../sass/theme/_base.scss */
 .field-name-field-inline-gallery .field-item:nth-child(4n+4) {
   margin-right: 0;
 }
 
-/* line 34, ../sass/theme/_base.scss */
+/* line 37, ../sass/theme/_base.scss */
 .image--title {
   padding: 8px 8px 0 8px;
 }
-/* line 39, ../sass/theme/_base.scss */
+/* line 42, ../sass/theme/_base.scss */
 .image--title img {
   margin-bottom: 8px;
 }
-/* line 43, ../sass/theme/_base.scss */
+/* line 46, ../sass/theme/_base.scss */
 .image--title .title {
   text-align: center;
   margin-bottom: 8px;
@@ -1171,6 +1186,101 @@ header .menu-name-menu-secondary-menu a {
 
 /**
  * @file
+ * Styles the news list and news pages.
+ */
+/* line 6, ../sass/modules/_news.scss */
+.news--list {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 46, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.news--list:before, .news--list:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.news--list:after {
+  clear: both;
+}
+/* line 15, ../sass/modules/_news.scss */
+.news--list .news--list--first-item {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 19, ../sass/modules/_news.scss */
+.news--list .news--list--second-item {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 23, ../sass/modules/_news.scss */
+.news--list .news--list--third-item {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 27, ../sass/modules/_news.scss */
+.news--list .news--title {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+/* line 31, ../sass/modules/_news.scss */
+.news--list .news--title a {
+  -moz-transition: background 0.3s linear, color 0.2s linear;
+  -webkit-transition: background 0.3s linear, color 0.2s linear;
+  -o-transition: background 0.3s linear, color 0.2s linear;
+  transition: background 0.3s linear, color 0.2s linear;
+}
+/* line 39, ../sass/modules/_news.scss */
+.news--list .news--date {
+  background: transparent url(../images/back-border-default.png) left top repeat-x;
+  padding: 5px 8px 3px;
+  margin: 4px 0 0;
+  color: #555;
+}
+/* line 46, ../sass/modules/_news.scss */
+.news--list .news--lead {
+  background: transparent url(../images/back-border-default.png) left top repeat-x;
+  padding: 8px;
+  margin: 0;
+}
+
+/**
+ * @file
  * Handles the staff profile page.
  */
 /* line 6, ../sass/modules/_profile.scss */
@@ -1229,4 +1339,8 @@ header .menu-name-menu-secondary-menu a {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+}
+/* line 31, ../sass/modules/_profile.scss */
+.view-staff .staff--right .field-label {
+  font-weight: normal;
 }

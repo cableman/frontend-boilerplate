@@ -49,3 +49,32 @@ function nebula_preprocess_node(&$variables) {
     unset($variables['content']['field_profile_position']);
   }
 }
+
+/**
+ * Implements hook_preprocess_views_view_responsive_grid().
+ *
+ * Adds the correct classes to rows and columns to the news list view based on
+ * the number of news posts promoted to the front page.
+ */
+function nebula_preprocess_views_view_responsive_grid(&$vars) {
+  if ($vars['view']->name == 'news') {
+    // Defined column classes.
+    $columns_classes = array(
+      ' news--list--first-item',
+      ' news--list--second-item',
+      ' news--list--third-item',
+    );
+
+    // Loop over the rows to add the correct classes to the columns.
+    foreach ($vars['rows'] as $row_number => $row) {
+      // Add column classes to the current row.
+      $column_id = 0;
+      foreach ($row as $column_id => $column) {
+        $vars['rows'][$row_number][$column_id]['classes'] .= $columns_classes[$column_id];
+      }
+
+      // Add last class to last column.
+      $vars['rows'][$row_number][$column_id]['classes'] .= ' last';
+    }
+  }
+}
