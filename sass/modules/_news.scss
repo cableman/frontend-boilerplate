@@ -49,3 +49,18 @@
     margin: 0;
   }
 }
+
+.node-news {
+  .news--date {
+    background: transparent url(../images/back-border-default.png) left top repeat-x;
+    padding: 5px 8px 3px;
+    margin: 4px 0 0;
+    color: #555;
+  }
+
+  .field-name-field-content {
+    background: transparent url(../images/back-border-default.png) left top repeat-x;
+    padding: 8px;
+    margin: 0;
+  }
+}
