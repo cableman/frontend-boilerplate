@@ -1314,13 +1314,15 @@ header .menu-name-menu-secondary-menu a {
 /* line 11, ../sass/modules/_profile.scss */
 .view-staff .staff--row {
   margin-bottom: 20px;
+  overflow: hidden;
+  clear: left;
 }
-/* line 15, ../sass/modules/_profile.scss */
+/* line 18, ../sass/modules/_profile.scss */
 .view-staff .staff--titel {
   font-size: 22px;
   padding-left: 5px;
 }
-/* line 20, ../sass/modules/_profile.scss */
+/* line 23, ../sass/modules/_profile.scss */
 .view-staff .staff--left {
   float: left;
   width: 25%;
@@ -1337,7 +1339,7 @@ header .menu-name-menu-secondary-menu a {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 28, ../sass/modules/_profile.scss */
+/* line 31, ../sass/modules/_profile.scss */
 .view-staff .staff--right {
   float: left;
   width: 75%;
@@ -1354,7 +1356,7 @@ header .menu-name-menu-secondary-menu a {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 31, ../sass/modules/_profile.scss */
+/* line 34, ../sass/modules/_profile.scss */
 .view-staff .staff--right .field-label {
   font-weight: normal;
 }
