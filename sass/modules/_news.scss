@@ -12,6 +12,13 @@
 
   @include zen-grid-container;
 
+  .news--list-row {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    @include zen-clear();
+  }
+
   .news--list--first-item {
     @include zen-grid-item(1, 1);
   }

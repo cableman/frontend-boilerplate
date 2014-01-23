@@ -1,0 +1,24 @@
+/**
+ * @file
+ * Style for the contact page.
+ */
+
+.contact--page {
+  $zen-column-count: 12;
+
+  @include zen-grid-container;
+
+  #block-block-5 {
+    @include zen-grid-item(5, 1);
+
+    padding-left: 0;
+
+    .number {
+      margin-left: 10px;
+    }
+  }
+
+  #block-system-main {
+    @include zen-grid-item(7, 6);
+  }
+}

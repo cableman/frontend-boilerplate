@@ -27,6 +27,11 @@ function nebula_preprocess_page(&$variables) {
 
   // Set the class.
   $variables['classes_array'][] = $class;
+
+  $item = menu_get_item();
+  if ($item['path'] == 'contact') {
+    $variables['classes_array'][] = 'contact--page';
+  }
 }
 
 /**

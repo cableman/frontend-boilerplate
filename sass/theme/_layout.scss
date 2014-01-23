@@ -8,6 +8,10 @@
   max-width: 960px;
 }
 
+body {
+  background: $background url('../images/back-body.jpg') left top repeat;
+}
+
 /* Header
    ================================================================================================================== */
 

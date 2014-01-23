@@ -52,3 +52,13 @@
 .image--content {
   @extend %image;
 }
+
+.float--right {
+  float: right;
+  margin-left: 10px;
+}
+
+.float--left {
+  float: left;
+  margin-right: 10px;
+}

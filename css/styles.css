@@ -374,10 +374,9 @@ body {
   font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222222;
   text-shadow: rgba(255, 255, 255, 0.4) 0 1px 0;
-  background: #ecece9 url("../images/back-body.jpg") left top repeat;
 }
 
-/* line 18, ../sass/base/_base.scss */
+/* line 17, ../sass/base/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-top: 0;
@@ -388,56 +387,56 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 31, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 h1, h2, h3 {
   color: #333333;
 }
 
-/* line 35, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 h1 {
   font-size: 26px;
 }
 
-/* line 39, ../sass/base/_base.scss */
+/* line 38, ../sass/base/_base.scss */
 h2 {
   font-size: 18px;
 }
 
-/* line 43, ../sass/base/_base.scss */
+/* line 42, ../sass/base/_base.scss */
 h3 {
   font-size: 14px;
 }
 
-/* line 47, ../sass/base/_base.scss */
+/* line 46, ../sass/base/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 52, ../sass/base/_base.scss */
+/* line 51, ../sass/base/_base.scss */
 em {
   font-style: italic;
 }
-/* line 55, ../sass/base/_base.scss */
+/* line 54, ../sass/base/_base.scss */
 em strong {
   font-weight: bold;
 }
 
 /* Links
    ================================================================================================================== */
-/* line 64, ../sass/base/_base.scss */
+/* line 63, ../sass/base/_base.scss */
 a {
   color: #1469a2;
 }
-/* line 68, ../sass/base/_base.scss */
+/* line 67, ../sass/base/_base.scss */
 a:link, a:visited {
   text-decoration: underline;
 }
-/* line 73, ../sass/base/_base.scss */
+/* line 72, ../sass/base/_base.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 82, ../sass/base/_base.scss */
+/* line 81, ../sass/base/_base.scss */
 h3 a:link, h3 a:visited,
 h2 a:link,
 h2 a:visited {
@@ -448,7 +447,7 @@ h2 a:visited {
   line-height: 1em;
 }
 
-/* line 95, ../sass/base/_base.scss */
+/* line 94, ../sass/base/_base.scss */
 h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
   border: none;
   outline: none;
@@ -462,14 +461,14 @@ h3 a:hover, h3 a:focus, h2 a:hover, h2 a:focus {
 
 /* Paragraph
    ================================================================================================================== */
-/* line 111, ../sass/base/_base.scss */
+/* line 110, ../sass/base/_base.scss */
 p {
   margin-top: 0;
 }
 
 /* Image
    ================================================================================================================== */
-/* line 119, ../sass/base/_base.scss */
+/* line 118, ../sass/base/_base.scss */
 img {
   display: inline;
   height: auto;
@@ -636,15 +635,20 @@ header, .page .content-inner, .footer--outer {
   max-width: 960px;
 }
 
+/* line 11, ../sass/theme/_layout.scss */
+body {
+  background: #ecece9 url("../images/back-body.jpg") left top repeat;
+}
+
 /* Header
    ================================================================================================================== */
-/* line 14, ../sass/theme/_layout.scss */
+/* line 18, ../sass/theme/_layout.scss */
 header {
   margin-bottom: 20px;
   padding: 20px 8px 0;
   overflow: hidden;
 }
-/* line 21, ../sass/theme/_layout.scss */
+/* line 25, ../sass/theme/_layout.scss */
 header .header--inner {
   *position: relative;
   *zoom: 1;
@@ -658,7 +662,7 @@ header .header--inner:before, header .header--inner:after {
 header .header--inner:after {
   clear: both;
 }
-/* line 26, ../sass/theme/_layout.scss */
+/* line 30, ../sass/theme/_layout.scss */
 header .header--inner .logo {
   float: left;
   width: 25%;
@@ -675,7 +679,7 @@ header .header--inner .logo {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 30, ../sass/theme/_layout.scss */
+/* line 34, ../sass/theme/_layout.scss */
 header .header--inner .menu-wrapper {
   float: left;
   width: 75%;
@@ -695,7 +699,7 @@ header .header--inner .menu-wrapper {
 
 /* Page
    ================================================================================================================== */
-/* line 39, ../sass/theme/_layout.scss */
+/* line 43, ../sass/theme/_layout.scss */
 .page {
   /**
    * One column layout.
@@ -710,7 +714,7 @@ header .header--inner .menu-wrapper {
    * Three column layout.
    */
 }
-/* line 50, ../sass/theme/_layout.scss */
+/* line 54, ../sass/theme/_layout.scss */
 .page.layout--one-col .content-inner {
   *position: relative;
   *zoom: 1;
@@ -724,7 +728,7 @@ header .header--inner .menu-wrapper {
 .page.layout--one-col .content-inner:after {
   clear: both;
 }
-/* line 54, ../sass/theme/_layout.scss */
+/* line 58, ../sass/theme/_layout.scss */
 .page.layout--one-col .content-inner .primary-content {
   float: left;
   width: 100%;
@@ -741,7 +745,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 62, ../sass/theme/_layout.scss */
+/* line 66, ../sass/theme/_layout.scss */
 .page.layout--two-col--left .content-inner {
   *position: relative;
   *zoom: 1;
@@ -755,7 +759,7 @@ header .header--inner .menu-wrapper {
 .page.layout--two-col--left .content-inner:after {
   clear: both;
 }
-/* line 66, ../sass/theme/_layout.scss */
+/* line 70, ../sass/theme/_layout.scss */
 .page.layout--two-col--left .content-inner .primary-content {
   float: left;
   width: 75%;
@@ -772,7 +776,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 70, ../sass/theme/_layout.scss */
+/* line 74, ../sass/theme/_layout.scss */
 .page.layout--two-col--left .content-inner .secondary-content {
   float: left;
   width: 25%;
@@ -789,7 +793,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 78, ../sass/theme/_layout.scss */
+/* line 82, ../sass/theme/_layout.scss */
 .page.layout--two-col--right .content-inner {
   *position: relative;
   *zoom: 1;
@@ -803,7 +807,7 @@ header .header--inner .menu-wrapper {
 .page.layout--two-col--right .content-inner:after {
   clear: both;
 }
-/* line 82, ../sass/theme/_layout.scss */
+/* line 86, ../sass/theme/_layout.scss */
 .page.layout--two-col--right .content-inner .primary-content {
   float: left;
   width: 75%;
@@ -820,7 +824,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 86, ../sass/theme/_layout.scss */
+/* line 90, ../sass/theme/_layout.scss */
 .page.layout--two-col--right .content-inner .tertiary_content {
   float: left;
   width: 25%;
@@ -837,7 +841,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 94, ../sass/theme/_layout.scss */
+/* line 98, ../sass/theme/_layout.scss */
 .page.layout--three-col .content-inner {
   *position: relative;
   *zoom: 1;
@@ -851,7 +855,7 @@ header .header--inner .menu-wrapper {
 .page.layout--three-col .content-inner:after {
   clear: both;
 }
-/* line 98, ../sass/theme/_layout.scss */
+/* line 102, ../sass/theme/_layout.scss */
 .page.layout--three-col .content-inner .primary-content {
   float: left;
   width: 50%;
@@ -868,7 +872,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 102, ../sass/theme/_layout.scss */
+/* line 106, ../sass/theme/_layout.scss */
 .page.layout--three-col .content-inner .secondary-content {
   float: left;
   width: 25%;
@@ -885,7 +889,7 @@ header .header--inner .menu-wrapper {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 106, ../sass/theme/_layout.scss */
+/* line 110, ../sass/theme/_layout.scss */
 .page.layout--three-col .content-inner .tertiary_content {
   float: left;
   width: 25%;
@@ -905,25 +909,25 @@ header .header--inner .menu-wrapper {
 
 /* Footer
    ================================================================================================================== */
-/* line 115, ../sass/theme/_layout.scss */
+/* line 119, ../sass/theme/_layout.scss */
 footer {
   background: #ecece9 url("../images/back-body-footer.png") left top repeat;
   padding-top: 40px;
   margin-top: 40px;
 }
-/* line 120, ../sass/theme/_layout.scss */
+/* line 124, ../sass/theme/_layout.scss */
 footer .block-block .content {
   padding: 8px 8px 0 0;
 }
 
-/* line 125, ../sass/theme/_layout.scss */
+/* line 129, ../sass/theme/_layout.scss */
 .footer--outer {
   background-image: url("../images/compass_rose.png");
   background-repeat: no-repeat;
   background-position: 520px 100%;
   height: 380px;
 }
-/* line 133, ../sass/theme/_layout.scss */
+/* line 137, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner {
   *position: relative;
   *zoom: 1;
@@ -937,7 +941,7 @@ footer .block-block .content {
 .footer--outer .footer--inner:after {
   clear: both;
 }
-/* line 138, ../sass/theme/_layout.scss */
+/* line 142, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-mailchimp-lists-nyheder {
   float: left;
   width: 25%;
@@ -954,7 +958,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 142, ../sass/theme/_layout.scss */
+/* line 146, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-2 {
   float: left;
   width: 25%;
@@ -971,7 +975,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 146, ../sass/theme/_layout.scss */
+/* line 150, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-3 {
   float: left;
   width: 25%;
@@ -988,7 +992,7 @@ footer .block-block .content {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 150, ../sass/theme/_layout.scss */
+/* line 154, ../sass/theme/_layout.scss */
 .footer--outer .footer--inner #block-block-4 {
   float: left;
   width: 25%;
@@ -1065,6 +1069,18 @@ footer .block-block .content {
 .image--title .title {
   text-align: center;
   margin-bottom: 8px;
+}
+
+/* line 56, ../sass/theme/_base.scss */
+.float--right {
+  float: right;
+  margin-left: 10px;
+}
+
+/* line 61, ../sass/theme/_base.scss */
+.float--left {
+  float: left;
+  margin-right: 10px;
 }
 
 /**
@@ -1173,6 +1189,64 @@ header .menu-name-menu-secondary-menu a {
 
 /**
  * @file
+ * Style for the contact page.
+ */
+/* line 6, ../sass/modules/_contact.scss */
+.contact--page {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 46, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.contact--page:before, .contact--page:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.contact--page:after {
+  clear: both;
+}
+/* line 11, ../sass/modules/_contact.scss */
+.contact--page #block-block-5 {
+  float: left;
+  width: 41.66667%;
+  margin-left: 0%;
+  margin-right: -41.66667%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-left: 0;
+}
+/* line 16, ../sass/modules/_contact.scss */
+.contact--page #block-block-5 .number {
+  margin-left: 10px;
+}
+/* line 21, ../sass/modules/_contact.scss */
+.contact--page #block-system-main {
+  float: left;
+  width: 58.33333%;
+  margin-left: 41.66667%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/**
+ * @file
  * Handles general form related stuff.
  */
 /* line 6, ../sass/modules/_form.scss */
@@ -1203,6 +1277,12 @@ header .menu-name-menu-secondary-menu a {
   clear: both;
 }
 /* line 15, ../sass/modules/_news.scss */
+.news--list .news--list-row {
+  margin-bottom: 20px;
+  overflow: hidden;
+  clear: left;
+}
+/* line 22, ../sass/modules/_news.scss */
 .news--list .news--list--first-item {
   float: left;
   width: 33.33333%;
@@ -1219,7 +1299,7 @@ header .menu-name-menu-secondary-menu a {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 19, ../sass/modules/_news.scss */
+/* line 26, ../sass/modules/_news.scss */
 .news--list .news--list--second-item {
   float: left;
   width: 33.33333%;
@@ -1236,7 +1316,7 @@ header .menu-name-menu-secondary-menu a {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 23, ../sass/modules/_news.scss */
+/* line 30, ../sass/modules/_news.scss */
 .news--list .news--list--third-item {
   float: left;
   width: 33.33333%;
@@ -1253,40 +1333,40 @@ header .menu-name-menu-secondary-menu a {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 27, ../sass/modules/_news.scss */
+/* line 34, ../sass/modules/_news.scss */
 .news--list .news--title {
   font-size: 22px;
   margin-bottom: 8px;
 }
-/* line 31, ../sass/modules/_news.scss */
+/* line 38, ../sass/modules/_news.scss */
 .news--list .news--title a {
   -moz-transition: background 0.3s linear, color 0.2s linear;
   -webkit-transition: background 0.3s linear, color 0.2s linear;
   -o-transition: background 0.3s linear, color 0.2s linear;
   transition: background 0.3s linear, color 0.2s linear;
 }
-/* line 39, ../sass/modules/_news.scss */
+/* line 46, ../sass/modules/_news.scss */
 .news--list .news--date {
   background: transparent url(../images/back-border-default.png) left top repeat-x;
   padding: 5px 8px 3px;
   margin: 4px 0 0;
   color: #555;
 }
-/* line 46, ../sass/modules/_news.scss */
+/* line 53, ../sass/modules/_news.scss */
 .news--list .news--lead {
   background: transparent url(../images/back-border-default.png) left top repeat-x;
   padding: 8px;
   margin: 0;
 }
 
-/* line 54, ../sass/modules/_news.scss */
+/* line 61, ../sass/modules/_news.scss */
 .node-news .news--date {
   background: transparent url(../images/back-border-default.png) left top repeat-x;
   padding: 5px 8px 3px;
   margin: 4px 0 0;
   color: #555;
 }
-/* line 61, ../sass/modules/_news.scss */
+/* line 68, ../sass/modules/_news.scss */
 .node-news .field-name-field-content {
   background: transparent url(../images/back-border-default.png) left top repeat-x;
   padding: 8px;
