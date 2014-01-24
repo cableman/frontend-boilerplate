@@ -44,3 +44,7 @@
     @include gradient(lighten($button-color, 5%), darken($button-color, 5%));
   }
 }
+
+a.button {
+  text-decoration: none;
+}

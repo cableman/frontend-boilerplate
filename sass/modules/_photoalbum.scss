@@ -1,0 +1,61 @@
+/**
+ * @file
+ * Styles the photo album list and pages.
+ */
+
+.photoalbum-list {
+  img {
+    @extend %image;
+  }
+
+  $zen-column-count: 3;
+
+  @include zen-grid-container;
+
+  .photoalbum-list--row {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    @include zen-clear();
+  }
+
+  .photoalbum-list--first-item {
+    @include zen-grid-item(1, 1);
+  }
+
+  .photoalbum-list--second-item {
+    @include zen-grid-item(1, 2);
+  }
+
+  .photoalbum-list--third-item {
+    @include zen-grid-item(1, 3);
+  }
+
+  .photoalbum--title {
+    font-size: 22px;
+    margin-bottom: 8px;
+
+    a {
+      -moz-transition: background 0.3s linear, color 0.2s linear;
+      -webkit-transition: background 0.3s linear, color 0.2s linear;
+      -o-transition: background 0.3s linear, color 0.2s linear;
+      transition: background 0.3s linear, color 0.2s linear;
+    }
+  }
+}
+
+.node-photo-album {
+  img {
+    @extend %image;
+  }
+
+  .field-name-field-album-images .field-item {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}

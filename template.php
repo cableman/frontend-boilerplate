@@ -62,6 +62,7 @@ function nebula_preprocess_node(&$variables) {
  * the number of news posts promoted to the front page.
  */
 function nebula_preprocess_views_view_responsive_grid(&$vars) {
+  // Handle news view.
   if ($vars['view']->name == 'news') {
     // Defined column classes.
     $columns_classes = array(
@@ -69,17 +70,40 @@ function nebula_preprocess_views_view_responsive_grid(&$vars) {
       ' news--list--second-item',
       ' news--list--third-item',
     );
+  }
 
-    // Loop over the rows to add the correct classes to the columns.
-    foreach ($vars['rows'] as $row_number => $row) {
-      // Add column classes to the current row.
-      $column_id = 0;
-      foreach ($row as $column_id => $column) {
-        $vars['rows'][$row_number][$column_id]['classes'] .= $columns_classes[$column_id];
-      }
+  // Handle photo album view.
+  if ($vars['view']->name == 'photoalbum') {
+    // Defined column classes.
+    $columns_classes = array(
+      ' photoalbum-list--first-item',
+      ' photoalbum-list--second-item',
+      ' photoalbum-list--third-item',
+    );
+  }
 
-      // Add last class to last column.
-      $vars['rows'][$row_number][$column_id]['classes'] .= ' last';
+  // Set the row classes.
+  _nebula_grid_row_classes($vars['rows'], $columns_classes);
+}
+
+/**
+ * Add classes to each element in the grid rows.
+ *
+ * @param array $rows
+ *   Rows from the responsive grid view.
+ * @param array $columns_classes
+ *   The classes to add to the column elements index by id.
+ */
+function _nebula_grid_row_classes(&$rows, $columns_classes) {
+  // Loop over the rows to add the correct classes to the columns.
+  foreach ($rows as $row_number => $row) {
+    // Add column classes to the current row.
+    $column_id = 0;
+    foreach ($row as $column_id => $column) {
+      $rows[$row_number][$column_id]['classes'] .= $columns_classes[$column_id];
     }
+
+    // Add last class to last column.
+    $rows[$row_number][$column_id]['classes'] .= ' last';
   }
 }
