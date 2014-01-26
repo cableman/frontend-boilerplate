@@ -53,6 +53,10 @@
   @extend %image;
 }
 
+.field-name-field-content img {
+  @extend %image;
+}
+
 .float--right {
   float: right;
   margin-left: 10px;
