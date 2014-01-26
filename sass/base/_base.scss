@@ -8,23 +8,17 @@
 
 
 body {
-  background-color: #fff;
-  color: #333;
   font: $font;
+  color: $text-color;
+  @include text-shadow(rgba($white, 0.4) 0 1px 0);
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: .5em;
-
-  font-family: $font;
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+
+  margin-top: 0;
+  margin-bottom: 0.2em;
 
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
@@ -33,6 +27,21 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
+h1, h2, h3  {
+  color: $text-color-head;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 14px;
+}
 
 strong {
   font-weight: bold;
@@ -48,33 +57,55 @@ em {
 }
 
 
-
 /* Links
-   ========================================================================== */
+   ================================================================================================================== */
 
 a {
-  &:link {
-    color: $link-color;
+  color: $link-color;
+
+  &:link,
+  &:visited {
     text-decoration: underline;
   }
 
-  &:visited {
-    color: darken($link-color, 5%);
-  }
-
-  &:hover {
-    color: darken($link-color, 10%);
-    text-decoration: none;
-  }
-
+  &:hover,
   &:focus {
-    color: darken($link-color, 10%);
+      text-decoration: none;
   }
 }
 
+h3,
+h2 {
+  a {
+    &:link,
+    &:visited {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px dotted #333;
+      display: inline-block;
+      line-height: 1em;
+    }
+  }
+}
+
+h3, h2 {
+  a {
+    &:hover,
+    &:focus {
+      border: none;
+      outline: none;
+      padding: 3px;
+      margin: -3px -3px -2px;
+      background: #188DDC;
+      background: rgba(24,141,220,0.8);
+      color: #fff;
+      text-shadow: none;
+    }
+  }
+}
 
 /* Paragraph
-   ========================================================================== */
+   ================================================================================================================== */
 
 p {
   margin-top: 0;
@@ -82,7 +113,7 @@ p {
 
 
 /* Image
-   ========================================================================== */
+   ================================================================================================================== */
 
 img {
   display: inline;

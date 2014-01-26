@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Handles the staff profile page.
+ */
+
+.view-staff {
+  $zen-column-count: 4;
+
+  @include zen-grid-container;
+
+  .staff--row {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    @include zen-clear();
+  }
+
+  .staff--titel {
+    font-size: 22px;
+    padding-left: 5px;
+  }
+
+  .staff--left {
+    img {
+      @extend %image;
+    }
+
+    @include zen-grid-item(1, 1);
+  }
+
+  .staff--right {
+    @include zen-grid-item(3, 2);
+
+    .field-label {
+      font-weight: normal;
+    }
+  }
+}

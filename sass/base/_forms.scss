@@ -1,13 +1,15 @@
 /**
  * Forms
  *
+ * This is an example file
+ *
  * @author magnify
  */
 
 
 
 /* Basic styling
-   ========================================================================== */
+   ================================================================================================================== */
 
 input,
 textarea {
@@ -25,10 +27,10 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea {
-  border: 1px solid $gray;
+  border: 1px solid $gray-lighter;
   display: block;
   min-height: 1.25em;
-  min-width: 100%;
+  width: 100%;
   padding: .75em;
 
   color: $gray-darker;
@@ -54,14 +56,13 @@ textarea {
 
 
 /* Labels
-   ========================================================================== */
+   ================================================================================================================== */
 
-.form-label {
+label {
   display: block;
   margin-bottom: .25em;
 
   /* Move labels so they align better with fields when using rounded corners */
-  /* Remove this if you fields don't have rounded corners */
   margin-left: .3em;
 
   color: $gray-darker;

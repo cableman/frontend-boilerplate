@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Handles general form related stuff.
+ */
+
+.form-item {
+  margin-bottom: 10px;
+
+  .form-required {
+    color: red;
+  }
+}
+
+.form-submit {
+  @extend .button;
+}

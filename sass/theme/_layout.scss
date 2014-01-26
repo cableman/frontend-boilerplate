@@ -1,0 +1,158 @@
+/**
+ * Layouts
+ */
+
+%center-layout-container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
+
+body {
+  background: $background url('../images/back-body.jpg') left top repeat;
+}
+
+/* Header
+   ================================================================================================================== */
+
+header {
+  @extend %center-layout-container;
+
+  margin-bottom: 20px;
+  padding: 20px 8px 0;
+  overflow: hidden;
+
+  .header--inner {
+    $zen-column-count: 4;
+
+    @include zen-grid-container;
+
+    .logo {
+      @include zen-grid-item(1, 1);
+    }
+
+    .menu-wrapper {
+      @include zen-grid-item(3, 2);
+    }
+  }
+}
+
+/* Page
+   ================================================================================================================== */
+
+.page {
+
+  .content-inner {
+    @extend %center-layout-container;
+  }
+
+  $zen-column-count: 4;
+
+  /**
+   * One column layout.
+   */
+  &.layout--one-col .content-inner {
+    $zen-column-count: 1;
+    @include zen-grid-container;
+
+    .primary-content {
+      @include zen-grid-item(1, 1);
+    }
+  }
+
+  /**
+   * Two column layout left.
+   */
+  &.layout--two-col--left .content-inner {
+    $zen-column-count: 4;
+    @include zen-grid-container;
+
+    .primary-content {
+      @include zen-grid-item(3, 2);
+    }
+
+    .secondary-content {
+      @include zen-grid-item(1, 1);
+    }
+  }
+
+  /**
+  * Two column layout right.
+  */
+  &.layout--two-col--right .content-inner {
+    $zen-column-count: 4;
+    @include zen-grid-container;
+
+    .primary-content {
+      @include zen-grid-item(3, 1);
+    }
+
+    .tertiary_content {
+      @include zen-grid-item(1, 4);
+    }
+  }
+
+  /**
+   * Three column layout.
+   */
+  &.layout--three-col .content-inner {
+
+    @include zen-grid-container;
+
+    .primary-content {
+      @include zen-grid-item(2, 2);
+    }
+
+    .secondary-content {
+      @include zen-grid-item(1, 1);
+    }
+
+    .tertiary_content {
+      @include zen-grid-item(1, 4);
+    }
+  }
+}
+
+/* Footer
+   ================================================================================================================== */
+
+footer {
+  background: $background url('../images/back-body-footer.png') left top repeat;
+  padding-top: 40px;
+  margin-top: 40px;
+
+  .block-block .content {
+    padding: 8px 8px 0 0;
+  }
+}
+
+.footer--outer {
+  background-image: url('../images/compass_rose.png');
+  background-repeat: no-repeat;
+  background-position: 520px 100%;
+  height: 380px;
+
+  @extend %center-layout-container;
+
+  .footer--inner {
+    $zen-column-count: 4;
+
+    @include zen-grid-container;
+
+    #block-mailchimp-lists-nyheder {
+      @include zen-grid-item(1, 1);
+    }
+
+    #block-block-2 {
+      @include zen-grid-item(1, 2);
+    }
+
+    #block-block-3 {
+      @include zen-grid-item(1, 3);
+    }
+
+    #block-block-4 {
+      @include zen-grid-item(1, 4);
+    }
+  }
+}

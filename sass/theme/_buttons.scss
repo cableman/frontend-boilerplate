@@ -1,0 +1,50 @@
+/**
+ * @file
+ * Defines button styles.
+ */
+
+@mixin gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top, $from, $to);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}
+
+%button {
+  display: inline-block;
+  position: relative;
+
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  @include border-radius($border-radius);
+  @include text-shadow(.025em .025em .1em lighten($gray-darker, 5%));
+}
+
+.button {
+  @extend %button;
+
+  background-color: $button-color;
+  border: 0;
+  color: $background;
+
+  padding: 6px 12px;
+
+  @include gradient(lighten($button-color, 15%), darken($button-color, 15%));
+
+  &:hover {
+    background: lighten($button-color, 10%);
+    color: $white;
+    @include gradient(lighten($button-color, 5%), darken($button-color, 5%));
+  }
+}
+
+a.button {
+  text-decoration: none;
+}

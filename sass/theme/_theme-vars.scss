@@ -1,41 +1,43 @@
 /**
- * Variables
+ * Theme variables
+ *
+ * This is an example file
  *
  * @author magnify
  */
 
-
-
 /* Layout
    ================================================================================================================== */
 
-$border-radius:    .6em !default;
-
-
+$layout-max-width:    75em;
+$border-radius:       .5em;
 
 /* Colors
    ================================================================================================================== */
 
-$black:            #000 !default;
-$white:            #fff !default;
+$background:  #ECECE9;
+$grey:        #555555;
+$shadow:      #AAAAAA;
+$white:       #FFFFFF;
+$blue:        #188DDC;
 
+$button-color: #999;
 
+$gray-lightest:    lighten($black, 90%);
+$gray-lighter:     lighten($black, 80%);
+$gray-light:       lighten($black, 70%);
+$gray-dark:        lighten($black, 50%);
+$gray-darker:      lighten($black, 40%);
+$gray-darkest:     lighten($black, 30%);
 
 /* Typograhy
    ================================================================================================================== */
 
-$font:             13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$text-color:       #222222;
+$text-color-head:  #333333;
 
 
 /* Link colors
    ================================================================================================================== */
 
-$link-color:       blue !default;
-
-
-
-/* Spacing
-   ================================================================================================================== */
-
-$margin-bottom:    1.5em !default;
-$padding-bottom:   1.5em !default;
+$link-color:       #1469A2;
