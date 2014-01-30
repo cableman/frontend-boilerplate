@@ -102,14 +102,25 @@ header {
         text-decoration: none;
 
 
-//        .menu-sidebar .menu .menu>li a:link,
-//        .menu-sidebar .menu .menu>li a:visited,
-//          background: transparent url(../images/back-sidebarmenu-active-level2.png) left top repeat-y;
-//        }
-//
         &.active,
+        &.active-trail,
         &:hover {
           background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-y;
+        }
+      }
+
+      // Next menu level.
+      .menu {
+        a {
+          background: transparent url(../images/back-sidebarmenu-active-level2.png) left top repeat-y;
+
+          padding-left: 16px;
+
+          &.active,
+          &.active-trail,
+          &:hover {
+            background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-y;
+          }
         }
       }
     }
