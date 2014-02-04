@@ -1,29 +1,26 @@
 /**
+ * @file
  * Breakpoints
  *
- * Should contain breakpoint variables and breakpoints related mixins
+ * Should contain breakpoint variables and breakpoints related mixins.
  *
- * @author magnify
  */
-
-
 
 /* Breakpoints
    *
-   * These are only examples, change/add/remove so they match your needs
+   * These are only examples, change/add/remove so they match your needs.
    *
    ================================================================================================================== */
 
-$breakpoint-1:               18.75em;
-$breakpoint-2:               22.5em;
-$breakpoint-3:               28em;
-
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 960px;
 
 /* Mixins
    *
-   * Use this mixin to change styling for your rulesets depending on a breakpoint (width)
+   * Use this mixin to change styling for your rulesets depending on a breakpoint (width).
    *
-   * Usage example: @include breakpoint($breakpoint-x)
+   * Usage example: @include breakpoint($breakpoint-x).
    *
    ================================================================================================================== */
 
