@@ -40,19 +40,23 @@
 
   margin: 0 0 50px;
 
-  .flexslider--title {
+  .flexslider--content {
     position: absolute;
-    top: 191px;
-    z-index: 10;
+    bottom: 5%;
 
-    width: 455px;
-    height: 100px;
+    width: 50%;
+    min-height: 100px;
 
-    font-size: 22px;
-    padding: 14px 145px 0 15px;
+    padding: 1% 14% 1% 1%;
 
     background: transparent url(../images/back-slider-title.png) left top repeat;
     background: rgba(12,79,136,0.7);
+
+    z-index: 20;
+  }
+
+  .flexslider--title {
+    font-size: 22px;
 
     a {
       color: $white;
@@ -66,25 +70,25 @@
   }
 
   .flexslider--lead {
-    position: absolute;
-    top: 233px;
-
     color: $white;
     text-shadow: none;
-
-    width: 455px;
-
-    padding: 10px 0 0 15px;
-    z-index: 20;
   }
 
   .flex-direction-nav {
+    position: absolute;
+    left: 52%;
+    bottom: 25%;
+    z-index: 30;
+
+    li {
+      float: left;
+      padding-right: 14px;
+    }
 
     .flex-prev {
-      position: absolute;
-      top: 225px;
-      left: 482px;
-      z-index: 30;
+      position: static;
+      top: 0;
+      left: 0;
 
       display: block;
       width: 43px;
@@ -95,17 +99,12 @@
 
       background: transparent url(../images/graphic-slider-prev.png) left top no-repeat;
       opacity: 0.8;
-
-      &:before {
-        content: none;
-      }
     }
 
     .flex-next {
-      position: absolute;
-      top: 225px;
-      left: 542px;
-      z-index: 30;
+      position: static;
+      top: 0;
+      left: 0;
 
       display: block;
       width: 43px;
@@ -117,10 +116,6 @@
 
       background: transparent url(../images/graphic-slider-next.png) left top no-repeat;
       opacity: 0.8;
-
-      &:before {
-        content: none;
-      }
     }
 
   }
