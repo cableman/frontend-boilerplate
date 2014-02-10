@@ -44,10 +44,14 @@
     position: absolute;
     bottom: 5%;
 
-    width: 50%;
-    min-height: 100px;
+    width: 98%;
+    padding: 1%;
 
-    padding: 1% 14% 1% 1%;
+    @include breakpoint($breakpoint-small) {
+      width: 50%;
+      min-height: 100px;
+      padding: 1% 14% 1% 1%;
+    }
 
     background: transparent url(../images/back-slider-title.png) left top repeat;
     background: rgba(12,79,136,0.7);
@@ -70,53 +74,64 @@
   }
 
   .flexslider--lead {
+    display: none;
+
     color: $white;
     text-shadow: none;
+
+    @include breakpoint($breakpoint-small) {
+      display: block;
+    }
   }
 
   .flex-direction-nav {
-    position: absolute;
-    left: 52%;
-    bottom: 25%;
-    z-index: 30;
+    display: none;
 
-    li {
-      float: left;
-      padding-right: 14px;
-    }
-
-    .flex-prev {
-      position: static;
-      top: 0;
-      left: 0;
-
+    @include breakpoint($breakpoint-medium) {
       display: block;
-      width: 43px;
-      height: 43px;
 
-      overflow: hidden;
-      text-indent: -999em;
+      position: absolute;
+      left: 52%;
+      bottom: 25%;
+      z-index: 30;
 
-      background: transparent url(../images/graphic-slider-prev.png) left top no-repeat;
-      opacity: 0.8;
+      li {
+        float: left;
+        padding-right: 14px;
+      }
+
+      .flex-prev {
+        position: static;
+        top: 0;
+        left: 0;
+
+        display: block;
+        width: 43px;
+        height: 43px;
+
+        overflow: hidden;
+        text-indent: -999em;
+
+        background: transparent url(../images/graphic-slider-prev.png) left top no-repeat;
+        opacity: 0.8;
+      }
+
+      .flex-next {
+        position: static;
+        top: 0;
+        left: 0;
+
+        display: block;
+        width: 43px;
+        height: 43px;
+
+        overflow: hidden;
+        text-indent: -999em;
+        text-align: left;
+
+        background: transparent url(../images/graphic-slider-next.png) left top no-repeat;
+        opacity: 0.8;
+      }
     }
-
-    .flex-next {
-      position: static;
-      top: 0;
-      left: 0;
-
-      display: block;
-      width: 43px;
-      height: 43px;
-
-      overflow: hidden;
-      text-indent: -999em;
-      text-align: left;
-
-      background: transparent url(../images/graphic-slider-next.png) left top no-repeat;
-      opacity: 0.8;
-    }
-
   }
 }
