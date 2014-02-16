@@ -13,6 +13,9 @@
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
     <?php print $scripts; ?>
+    <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="/sites/andromeda.dk/themes/nebula/css/ie8.css">
+    <![endif]-->
   </head>
   <body class="<?php print $classes; ?>" <?php print $attributes;?>>
     <div id="skip-link">

@@ -13,6 +13,12 @@ header {
       padding: 8px;
       list-style: none;
 
+      // IE
+      &.leaf {
+        list-style-type: none;
+        list-style-image: none;
+      }
+
       &.active,
       &.active-trail {
        background: $blue;
@@ -30,7 +36,8 @@ header {
         margin: 0 0 0 4px;
         padding: 0;
 
-        &.active {
+        &.active,
+        &.active-trail {
           background: none;
           padding: 0;
         }
