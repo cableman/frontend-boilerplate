@@ -11,9 +11,8 @@ regions[tertiary_content]  = Tertiary content
 regions[footer] = Footer
 
 ; JavaScripts
-scripts[] = script/jquery.resmenu.min.js
-scripts[] = script/enquire.min.js
-scripts[] = script/script.min.js
+scripts[] = scripts/jquery.resmenu.min.js
+scripts[] = scripts/menu.min.js
 
 ; Stylesheets
 stylesheets[all][] = css/fontello.css

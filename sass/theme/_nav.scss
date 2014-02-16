@@ -13,7 +13,8 @@ header {
       padding: 8px;
       list-style: none;
 
-      &.active {
+      &.active,
+      &.active-trail {
        background: $blue;
        background: rgba(24,141,220,0.8);
        padding: 8px;

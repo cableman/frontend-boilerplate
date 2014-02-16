@@ -25,5 +25,5 @@ $breakpoint-large: 940px;
    ================================================================================================================== */
 
 @mixin breakpoint($breakpoint) {
-  @media only screen and (min-width: $breakpoint) { @content; }
+  @media screen and (min-width: $breakpoint) { @content; }
 }
