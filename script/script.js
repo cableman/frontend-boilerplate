@@ -1,6 +1,6 @@
 (function ($) {
   $(document).ready(function() {
-    enquire.register("screen and (max-width:768px)", function () {
+    enquire.register("only screen and (max-width:767px)", function () {
       // Move menu items.
       var sec_menu = $('#block-menu-block-2 .menu');
       var main_menu = $('#block-menu-block-1 .menu');
