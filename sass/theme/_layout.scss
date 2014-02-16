@@ -60,16 +60,18 @@ header {
 
   .video-filter {
     display: none;
-  }
-
-  @include breakpoint($breakpoint-small) {
-    .video-filter {
+    @include breakpoint($breakpoint-small) {
       display: block;
     }
   }
 
   .content-inner {
     @extend %center-layout-container;
+
+    padding: 0 10px;
+    @include breakpoint($breakpoint-medium) {
+      padding: 0;
+    }
   }
 
   $zen-column-count: 4;
@@ -94,11 +96,15 @@ header {
     @include zen-grid-container;
 
     .primary-content {
-      @include zen-grid-item(3, 2);
+      @include breakpoint($breakpoint-medium) {
+        @include zen-grid-item(3, 2);
+      }
     }
 
     .secondary-content {
-      @include zen-grid-item(1, 1);
+      @include breakpoint($breakpoint-medium) {
+        @include zen-grid-item(1, 1);
+      }
     }
   }
 

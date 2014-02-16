@@ -57,12 +57,19 @@
   @extend %image;
 }
 
-.float--right {
-  float: right;
-  margin-left: 10px;
+.float--right,
+.float--left {
+  text-align: center;
 }
 
-.float--left {
-  float: left;
-  margin-right: 10px;
+@include breakpoint($breakpoint-medium) {
+  .float--right {
+    float: right;
+    margin-left: 10px;
+  }
+
+  .float--left {
+    float: left;
+    margin-right: 10px;
+  }
 }

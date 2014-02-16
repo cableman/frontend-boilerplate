@@ -12,11 +12,14 @@
       // Add mobile menu icon
       sec_menu.append('<div class="js-mobile--menu"><i class="icon-menu"></i>Menu</div>');
       sec_menu.show();
-      
+
       // Toggle menu.
       $('.js-mobile--menu').click(function () {
         main_menu.toggle();
       });
+
+      // Fix sec. menu.
+      $('.secondary-content .menu-name-main-menu .menu').ReSmenu();
     });
   });
 })(jQuery);

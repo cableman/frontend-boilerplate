@@ -149,53 +149,62 @@ header {
 /* Sidebar menu
    ================================================================================================================== */
 
-.content-wrapper .block-menu-block {
-  padding: 22px 0 0;
-  background: transparent url(../images/back-sidebarmenu-top.png) left top no-repeat;
-  width: 220px;
+.responsive_menu select {
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+  height: 40px;
+}
 
-  .content {
-    padding: 0 0 26px;
-    background: transparent url(../images/back-sidebarmenu-bottom.png) left bottom no-repeat;
-  }
+@include breakpoint($breakpoint-medium) {
+  .content-wrapper .block-menu-block {
+    padding: 22px 0 0;
+    background: transparent url(../images/back-sidebarmenu-top.png) left top no-repeat;
+    width: 220px;
 
-  .menu {
-    padding: 0;
-    margin: 0;
-    background: transparent url(../images/back-sidebarmenu.png) left top repeat-y;
+    .content {
+      padding: 0 0 26px;
+      background: transparent url(../images/back-sidebarmenu-bottom.png) left bottom no-repeat;
+    }
 
-    >li {
-      list-style: none none outside;
-      margin: 0;
+    .menu {
       padding: 0;
+      margin: 0;
+      background: transparent url(../images/back-sidebarmenu.png) left top repeat-y;
 
-      a {
-        background: transparent url(../images/back-sidebarmenu-default.png) left top repeat-x;
-        display: block;
-        padding: 4px 0px 2px 10px;
-        line-height: 26px;
-        color: $grey;
-        text-decoration: none;
+      >li {
+        list-style: none none outside;
+        margin: 0;
+        padding: 0;
 
-
-        &.active,
-        &.active-trail,
-        &:hover {
-          background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-y;
-        }
-      }
-
-      // Next menu level.
-      .menu {
         a {
-          background: transparent url(../images/back-sidebarmenu-active-level2.png) left top repeat-y;
+          background: transparent url(../images/back-sidebarmenu-default.png) left top repeat-x;
+          display: block;
+          padding: 4px 0px 2px 10px;
+          line-height: 26px;
+          color: $grey;
+          text-decoration: none;
 
-          padding-left: 16px;
 
           &.active,
           &.active-trail,
           &:hover {
             background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-y;
+          }
+        }
+
+        // Next menu level.
+        .menu {
+          a {
+            background: transparent url(../images/back-sidebarmenu-active-level2.png) left top repeat-y;
+
+            padding-left: 16px;
+
+            &.active,
+            &.active-trail,
+            &:hover {
+              background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-y;
+            }
           }
         }
       }
