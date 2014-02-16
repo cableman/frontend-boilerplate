@@ -25,11 +25,15 @@
       @extend %image;
     }
 
-    @include zen-grid-item(1, 1);
+    @include breakpoint($breakpoint-medium) {
+      @include zen-grid-item(1, 1);
+    }
   }
 
   .staff--right {
-    @include zen-grid-item(3, 2);
+    @include breakpoint($breakpoint-medium) {
+      @include zen-grid-item(3, 2);
+    }
 
     .field-label {
       font-weight: normal;

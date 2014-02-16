@@ -9,7 +9,9 @@
   @include zen-grid-container;
 
   #block-block-5 {
-    @include zen-grid-item(5, 1);
+    @include breakpoint($breakpoint-medium) {
+      @include zen-grid-item(5, 1);
+    }
 
     padding-left: 0;
 
@@ -19,6 +21,8 @@
   }
 
   #block-system-main {
-    @include zen-grid-item(7, 6);
+    @include breakpoint($breakpoint-medium) {
+      @include zen-grid-item(7, 6);
+    }
   }
 }
