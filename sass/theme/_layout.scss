@@ -193,6 +193,7 @@ footer {
       }
 
       #block-block-4 {
+        text-align: left;
         @include zen-grid-item(1, 4);
       }
     }
