@@ -13,8 +13,7 @@ header {
       padding: 8px;
       list-style: none;
 
-      &.active,
-      &:hover {
+      &.active {
        background: $blue;
        background: rgba(24,141,220,0.8);
        padding: 8px;
@@ -105,11 +104,17 @@ header {
 
     .js-mobile--menu {
       position: absolute;
-      top: 10%;
-      right: 5%;
+      top: 35px;
+      right: 5px;
 
       text-align: right;
       cursor: pointer;
+
+      @include breakpoint($breakpoint-small) {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+      }
     }
   }
 
