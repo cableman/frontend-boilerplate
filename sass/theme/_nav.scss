@@ -114,6 +114,13 @@ header {
     font-size: 20px;
     padding-right: 20px;
 
+    .menu {
+      display: none;
+      @include breakpoint($breakpoint-medium) {
+        display: block;
+      }
+    }
+
     .js-mobile--menu {
       position: absolute;
       top: 35px;

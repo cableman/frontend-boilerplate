@@ -6,14 +6,13 @@
       var main_menu = $('#block-menu-block-1 .menu');
       var items = $('li', sec_menu);
 
+      sec_menu.show();
+
       // Append menu item to main menu.
       main_menu.append(items);
 
       // Add mobile menu icon
       sec_menu.append('<div class="js-mobile--menu"><i class="icon-menu"></i>Menu</div>');
-
-      // Hide main menu.
-      main_menu.hide();
 
       // Toggle menu.
       $('.js-mobile--menu').click(function () {
