@@ -15,6 +15,7 @@ scripts[] = script/enquire.min.js
 scripts[] = script/script.min.js
 
 ; Stylesheets
+stylesheets[all][] = css/fontello.css
 stylesheets[all][] = css/styles.css
 
 ; Disable stylesheets

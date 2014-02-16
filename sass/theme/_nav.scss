@@ -9,22 +9,55 @@ header {
   .menu {
     text-transform: uppercase;
 
-   li {
-      margin: 0 0 0 4px;
-      padding: 0;
+    li {
+      padding: 8px;
+      list-style: none;
+
+      &.active,
+      &:hover {
+       background: $blue;
+       background: rgba(24,141,220,0.8);
+       padding: 8px;
+
+       a {
+        color: $white;
+       }
+     }
     }
 
-    >li {
-      float: left;
-      list-style: none;
+    @include breakpoint($breakpoint-medium) {
+      li {
+        margin: 0 0 0 4px;
+        padding: 0;
+
+        &.active {
+          background: none;
+          padding: 0;
+        }
+      }
+
+      >li {
+        float: left;
+        list-style: none;
+      }
+
+      a {
+        -moz-transition: background 0.3s linear, color 0.2s linear;
+        -webkit-transition: background 0.3s linear, color 0.2s linear;
+        -o-transition: background 0.3s linear, color 0.2s linear;
+        transition: background 0.3s linear, color 0.2s linear;
+      }
+
+      .active-trail a,
+      .active a,
+      a:hover {
+        background: $blue;
+        text-shadow: none;
+        background: rgba(24,141,220,0.8);
+      }
     }
 
     a {
-      -moz-transition: background 0.3s linear, color 0.2s linear;
-      -webkit-transition: background 0.3s linear, color 0.2s linear;
-      -o-transition: background 0.3s linear, color 0.2s linear;
-      transition: background 0.3s linear, color 0.2s linear;
-
       text-decoration: none;
       color: #333;
     }
@@ -33,20 +66,28 @@ header {
     .active a,
     a:hover {
       color: $white;
-      background: $blue;
-      text-shadow: none;
-      background: rgba(24,141,220,0.8);
     }
+
   }
 
   .block-menu-block {
-    display: inline-block;
-    float: right;
+    display: block;
+
+    @include breakpoint($breakpoint-medium) {
+      display: inline-block;
+      float: right;
+    }
   }
 
   // Main menu
   .menu-name-main-menu {
-    margin-right: -8px;
+    ul {
+      padding-left: 0;
+    }
+
+    @include breakpoint($breakpoint-medium) {
+      margin-right: -8px;
+    }
   }
 
   .menu-name-main-menu .menu a {
@@ -59,14 +100,31 @@ header {
 
   // Secondary Menu
   .menu-name-menu-secondary-menu {
-    font-size: 11px;
-    height: 20px;
-    margin-right: -6px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    padding-right: 20px;
+
+    .js-mobile--menu {
+      position: absolute;
+      top: 10%;
+      right: 5%;
+
+      text-align: right;
+      cursor: pointer;
+    }
   }
 
   .menu-name-menu-secondary-menu a {
     padding: 6px;
+  }
+
+  @include breakpoint($breakpoint-medium) {
+    .menu-name-menu-secondary-menu {
+      font-size: 11px;
+      height: 20px;
+      margin-right: -6px;
+      margin-bottom: 20px;
+      padding: 0px;
+    }
   }
 }
 
