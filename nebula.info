@@ -10,6 +10,10 @@ regions[secondary_content] = Secondary content
 regions[tertiary_content]  = Tertiary content
 regions[footer] = Footer
 
+; JavaScripts
+scripts[] = script/enquire.min.js
+scripts[] = script/script.min.js
+
 ; Stylesheets
 stylesheets[all][] = css/styles.css
 
