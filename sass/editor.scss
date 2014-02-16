@@ -1,0 +1,24 @@
+/**
+ * Editor stylesheet (WYSIWYG).
+ */
+
+/* Compass */
+@import "compass/css3";
+
+// Include base vars
+@import "base/_vars";
+
+// Override with theme vars
+@import "theme/_theme-vars";
+
+// Theme
+@import "theme/_breakpoints";
+@import "theme/_buttons";
+@import "theme/_base";
+
+// Modules
+.news--list {
+  img {
+    @extend %image;
+  }
+}
