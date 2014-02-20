@@ -2,6 +2,6 @@
  * @file
  * IE8 stylesheet fixes.
  */
-.primary-content .field-name-field-content img {
+img {
   max-width: none;
 }
