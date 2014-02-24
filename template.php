@@ -49,7 +49,9 @@ function nebula_preprocess_node(&$variables) {
   if ($variables['type'] == 'staff_profile') {
     // This is a evil hack.
     $title = $variables['content']['field_profile_name'][0]['#markup'];
-    $title .= ' <span class="position">(' . $variables['content']['field_profile_position'][0]['#markup'] . ')</span>';
+    if (isset($variables['content']['field_profile_position'])) {
+      $title .= ' <span class="position">(' . $variables['content']['field_profile_position'][0]['#markup'] . ')</span>';
+    }
     $variables['content']['field_profile_name'][0]['#markup'] = '<h2 class="staff--titel">' . $title . '</h2>';
     unset($variables['content']['field_profile_position']);
   }
