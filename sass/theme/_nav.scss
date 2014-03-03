@@ -168,7 +168,7 @@ header {
   .content-wrapper .block-menu-block {
     padding: 22px 0 0;
     background: transparent url(../images/back-sidebarmenu-top.png) left top no-repeat;
-    width: 220px;
+    max-width: 220px;
 
     .content {
       padding: 0 0 26px;
