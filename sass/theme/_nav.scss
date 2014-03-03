@@ -178,12 +178,17 @@ header {
     .menu {
       padding: 0;
       margin: 0;
-      background: transparent url(../images/back-sidebarmenu.png) left top repeat-y;
 
-      >li {
+      background: url(../images/back-sidebarmenu-left.png) top left repeat-y,
+      url(../images/back-sidebarmenu-right.png) top right repeat-y;
+
+      li {
         list-style: none none outside;
         margin: 0;
         padding: 0;
+
+        background: url(../images/back-sidebarmenu.png) top left repeat;
+
 
         a {
           background: transparent url(../images/back-sidebarmenu-default.png) left top repeat-x;
@@ -197,7 +202,7 @@ header {
           &.active,
           &.active-trail,
           &:hover {
-            background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-y;
+            background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-x;
           }
         }
 
