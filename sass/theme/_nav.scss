@@ -167,7 +167,9 @@ header {
 @include breakpoint($breakpoint-medium) {
   .content-wrapper .block-menu-block {
     padding: 22px 0 0;
-    background: transparent url(../images/back-sidebarmenu-top.png) left top no-repeat;
+    background: url(../images/back-sidebarmenu-top-left.png) top left no-repeat,
+    url(../images/back-sidebarmenu-top-right.png) top right no-repeat,
+    url(../images/back-sidebarmenu-top.png) left 20px top repeat-x;
     max-width: 220px;
 
     .content {

@@ -1111,24 +1111,24 @@ header .menu-name-menu-secondary-menu a {
   /* line 168, ../sass/theme/_nav.scss */
   .content-wrapper .block-menu-block {
     padding: 22px 0 0;
-    background: transparent url(../images/back-sidebarmenu-top.png) left top no-repeat;
+    background: url(../images/back-sidebarmenu-top-left.png) top left no-repeat, url(../images/back-sidebarmenu-top-right.png) top right no-repeat, url(../images/back-sidebarmenu-top.png) left 20px top repeat-x;
     max-width: 220px; }
-  /* line 173, ../sass/theme/_nav.scss */
+  /* line 175, ../sass/theme/_nav.scss */
   .content-wrapper .block-menu-block .content {
     padding: 0 0 26px;
     background: transparent url(../images/back-sidebarmenu-bottom.png) left bottom no-repeat; }
-  /* line 178, ../sass/theme/_nav.scss */
+  /* line 180, ../sass/theme/_nav.scss */
   .content-wrapper .block-menu-block .menu {
     padding: 0;
     margin: 0;
     background: url(../images/back-sidebarmenu-left.png) top left repeat-y, url(../images/back-sidebarmenu-right.png) top right repeat-y; }
-  /* line 185, ../sass/theme/_nav.scss */
+  /* line 187, ../sass/theme/_nav.scss */
   .content-wrapper .block-menu-block .menu li {
     list-style: none none outside;
     margin: 0;
     padding: 0;
     background: url(../images/back-sidebarmenu.png) top left repeat; }
-  /* line 193, ../sass/theme/_nav.scss */
+  /* line 195, ../sass/theme/_nav.scss */
   .content-wrapper .block-menu-block .menu li a {
     background: transparent url(../images/back-sidebarmenu-default.png) left top repeat-x;
     display: block;
@@ -1136,14 +1136,14 @@ header .menu-name-menu-secondary-menu a {
     line-height: 26px;
     color: #555555;
     text-decoration: none; }
-  /* line 204, ../sass/theme/_nav.scss */
+  /* line 206, ../sass/theme/_nav.scss */
   .content-wrapper .block-menu-block .menu li a.active, .content-wrapper .block-menu-block .menu li a.active-trail, .content-wrapper .block-menu-block .menu li a:hover {
     background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-x; }
-  /* line 211, ../sass/theme/_nav.scss */
+  /* line 213, ../sass/theme/_nav.scss */
   .content-wrapper .block-menu-block .menu li .menu a {
     background: transparent url(../images/back-sidebarmenu-active-level2.png) left top repeat-y;
     padding-left: 16px; }
-  /* line 218, ../sass/theme/_nav.scss */
+  /* line 220, ../sass/theme/_nav.scss */
   .content-wrapper .block-menu-block .menu li .menu a.active, .content-wrapper .block-menu-block .menu li .menu a.active-trail, .content-wrapper .block-menu-block .menu li .menu a:hover {
     background: transparent url(../images/back-sidebarmenu-active.png) left top repeat-y; } }
 /**
