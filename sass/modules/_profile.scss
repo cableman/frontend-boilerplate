@@ -23,6 +23,10 @@
   .staff--left {
     img {
       @extend %image;
+
+      @include breakpoint($breakpoint-medium) {
+        width: 90%;
+      }
     }
 
     @include breakpoint($breakpoint-medium) {
