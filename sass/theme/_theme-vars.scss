@@ -21,7 +21,7 @@ $shadow:      #AAAAAA;
 $white:       #FFFFFF;
 $blue:        #188DDC;
 
-$button-color: #999;
+$button-color: $blue;
 
 $gray-lightest:    lighten($black, 90%);
 $gray-lighter:     lighten($black, 80%);
