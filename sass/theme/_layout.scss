@@ -6,9 +6,9 @@
   margin-right: auto;
   margin-left: auto;
 
-  max-width: 748px;
+  max-width: 768px;
 
-  @include breakpoint($breakpoint-medium) {
+  @include breakpoint($breakpoint-large) {
     max-width: 960px;
   }
 }
