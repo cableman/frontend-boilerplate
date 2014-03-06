@@ -6,6 +6,9 @@
  * with flex-slider.
  */
 
+// If not imported here the shadow image effect will not work.
+@import "theme/_theme-vars";
+
 .flex-control-nav {
   li {
     margin: 0 4px;
@@ -29,14 +32,16 @@
   box-shadow: none;
 }
 
-.flexslider {
+#front-page-slider.flexslider {
   position: relative;
   border: 1px solid $shadow;
-  -moz-box-shadow: 0px 1px 2px $shadow;
-  -o-box-shadow: 0px 1px 2px $shadow;
-  -webkit-box-shadow: 0px 1px 2px $shadow;
-  box-shadow: 0px 1px 2px $shadow;
+
+  @include single-box-shadow($shadow, 0px, 0px, 2px, 0, false);
   @include border-radius($border-radius);
+
+  img {
+    @include border-radius($border-radius);
+  }
 
   margin: 0 0 50px;
 
@@ -91,7 +96,7 @@
       display: block;
 
       position: absolute;
-      left: 52%;
+      left: 51%;
       bottom: 25%;
       z-index: 30;
 
