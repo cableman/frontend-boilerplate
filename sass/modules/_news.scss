@@ -4,13 +4,20 @@
  */
 
 .news--list {
-  img {
-    @extend %image;
-  }
-
   $zen-column-count: 3;
 
   @include zen-grid-container;
+
+  img {
+    @extend %image;
+    margin: 8px 0;
+  }
+
+  @include breakpoint($breakpoint-large) {
+    img {
+      margin: 8px;
+    }
+  }
 
   @include breakpoint($breakpoint-medium) {
     .news--list-row {
@@ -34,8 +41,12 @@
   }
 
   .news--title {
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 8px;
+
+    @include breakpoint($breakpoint-large) {
+      font-size: 22px;
+    }
 
     a {
       -moz-transition: background 0.3s linear, color 0.2s linear;
